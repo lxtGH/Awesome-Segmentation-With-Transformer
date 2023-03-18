@@ -59,7 +59,7 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 
 ## Summary of Contents
 
-- [Methods: A Survey](#inversion-method)
+- [Methods: A Survey](#methods-a-survey)
   - [Meta-Architecture](#meta-architecture)
   - [Strong Representation](#Strong Representation)
     - [Better ViTs Design](##Better ViTs Design)
@@ -81,7 +81,7 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
     - [Vision Adapter](##Vision Adapter)
     - [Open Vocabulary Learning](##Open Vocabulary Learning)
   
-- [Related Domains and Beyond ](#Related Domain and Beyond)
+- [Related Domains and Beyond](#Related Domain and Beyond)
   - [Point Cloud Segmentation](#Point Cloud Segmentation)
   - [Domain-aware Segmentation](#Domain-aware Segmentation)
   - [Label and Model Efficient Segmentation](#Label and Model Efficient Segmentation)
@@ -96,6 +96,15 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 |------|:-----------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------:|
 | 2020 |    ECCV     | [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872)                                                                                                                                   |                                              [Code](https://github.com/facebookresearch/detr)                                            |
 | 2021 |    ICLR     | [Deformable DETR: Deformable Transformers for End-to-End Object Detection](https://arxiv.org/abs/2010.04159) | [Code](https://github.com/fundamentalvision/Deformable-DETR)|
+
+
+### Strong Representation
+
+#### Better ViTs Design
+
+#### Hybrid CNNs/Transformers/MLPs
+
+#### Self-Supervised Learning
 
 ## Related Domains and Beyond 
 
