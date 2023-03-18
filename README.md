@@ -61,8 +61,8 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 
 - [Methods: A Survey](#methods-a-survey)
   - [Meta-Architecture](#meta-architecture)
-  - [Strong Representation](#Strong Representation)
-    - [Better ViTs Design](##Better ViTs Design)
+  - [Strong Representation](#Strong-Representation)
+    - [Better ViTs Design](##Better-ViTs-Design)
     - [Hybrid CNNs/Transformers/MLPs](##Hybrid CNNs/Transformers/MLPs)
     - [Self-Supervised Learning](##Self-Supervised Learning)
   - [Interaction Design in Decoder](#Interaction Design in Decoder)
