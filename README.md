@@ -102,9 +102,15 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 
 #### Better ViTs Design
 
+test
+
 #### Hybrid CNNs/Transformers/MLPs
 
+test
+
 #### Self-Supervised Learning
+
+test
 
 ## Related Domains and Beyond 
 
