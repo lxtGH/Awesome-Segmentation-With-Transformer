@@ -135,10 +135,9 @@ test
 If you find our survey and repository useful for your research project , please consider citing our paper:
 
 <pre><code class="language-bib" style="font-size: 0.9rem;" id="citation">@article{lxt_seg_survey,
-    author  = {Li, Xiangtai and Ding, Henghui and Zhang, Wenwei and Yuan, Haobo and Cheng, Guangliang and Jiangmiao, Pang and Chen, Kai and Liu, Ziwei and Loy, Chen Change},
-    title   = {Transformer-Based Visual Segmentation: A Survey},
-    journal = {arxiv},
+    author={Li, Xiangtai and Ding, Henghui and Zhang, Wenwei and Yuan, Haobo and Cheng, Guangliang and Jiangmiao, Pang and Chen, Kai and Liu, Ziwei and Loy, Chen Change},
+    title={Transformer-Based Visual Segmentation: A Survey},
+    journal={arXiv pre-print},
     year={2023}
   }
 </code></pre>
-
