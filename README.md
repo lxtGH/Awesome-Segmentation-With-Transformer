@@ -92,10 +92,22 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 
 ### Meta-Architecture
 
-| Year | Publication | Paper Title                                                                                                                                                                         |                                                                  Project                                                                 |
-|------|:-----------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------:|
-| 2020 |    ECCV     | [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872)                                                                                                                                   |                                              [Code](https://github.com/facebookresearch/detr)                                            |
-| 2021 |    ICLR     | [Deformable DETR: Deformable Transformers for End-to-End Object Detection](https://arxiv.org/abs/2010.04159) | [Code](https://github.com/fundamentalvision/Deformable-DETR)|
+| Year |  Venue  |      Acronym       | Paper Title                                                                                                    | Project                                                      |
+|:----:|:-------:|:------------------:|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| 2020 |  ECCV   |        DETR        | [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872)                              | [Code](https://github.com/facebookresearch/detr)             |
+| 2021 |  ICLR   |  Deformable DETR   | [Deformable DETR: Deformable Transformers for End-to-End Object Detection](https://arxiv.org/abs/2010.04159)   | [Code](https://github.com/fundamentalvision/Deformable-DETR) |
+| 2021 |  CVPR   |    Sparse R-CNN    | [Sparse R-CNN: End-to-End Object Detection with Learnable Proposals](https://arxiv.org/abs/2011.12450)         | [Code](https://github.com/PeizeSun/SparseR-CNN)              |
+| 2022 |  CVPR   |      AdaMixer      | [AdaMixer: A Fast-Converging Query-Based Object Detector](https://arxiv.org/abs/2203.16507)                    | [Code](https://github.com/MCG-NJU/AdaMixer)                  |
+| 2021 |  CVPR   |    MaX-DeepLab     | [MaX-DeepLab: End-to-End Panoptic Segmentation with Mask Transformers](https://arxiv.org/abs/2012.00759)       | [Code](https://github.com/google-research/deeplab2)          |
+| 2021 | NeurIPS |       K-Net        | [K-Net: Towards Unified Image Segmentation](https://arxiv.org/abs/2106.14855)                                  | [Code](https://github.com/ZwwWayne/K-Net/)                   |
+| 2022 |  CVPR   |    Mask2Former     | [Masked-attention Mask Transformer for Universal Image Segmentation](https://arxiv.org/abs/2112.01527)         | [Code](https://github.com/facebookresearch/Mask2Former)      |
+| 2022 |  ECCV   |    kMaX-DeepLab    | [k-means Mask Transformer](https://arxiv.org/abs/2207.04044)                                                   | [Code](https://github.com/google-research/deeplab2)          |                                                                                         |
+| 2021 |  CVPR   |       VisTR        | [VisTR: End-to-End Video Instance Segmentation with Transformers](https://arxiv.org/abs/2011.14503)            | [Code](https://github.com/Epiphqny/VisTR)                    |
+| 2022 | NeurIPS |        VITA        | [VITA: Video Instance Segmentation via Object Token Association](https://arxiv.org/abs/2206.04403)             | [Code](https://github.com/sukjunhwang/VITA)                  |
+| 2022 |  CVPR   | TubeFormer-DeepLab | [TubeFormer-DeepLab: Video Mask Transformer](https://arxiv.org/abs/2205.15361)                                 | N/A                                                          |
+| 2022 |  CVPR   |    Video K-Net     | [Video K-Net: A Simple, Strong, and Unified Baseline for Video Segmentation](https://arxiv.org/abs/2204.04656) | [Code](https://github.com/lxtGH/Video-K-Net)                 |
+
+
 
 
 ### Strong Representation
