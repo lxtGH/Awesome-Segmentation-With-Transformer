@@ -63,28 +63,28 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
     - [Better ViTs Design](##Better-ViTs-Design)
     - [Hybrid CNNs/Transformers/MLPs](##Hybrid CNNs/Transformers/MLPs)
     - [Self-Supervised Learning](##Self-Supervised Learning)
-  - [Interaction Design in Decoder](#Interaction Design in Decoder)
+  - [Interaction Design in Decoder](#Interaction-Design-in-Decoder)
     - [Improved Cross Attention Design](##Improved Cross Attention Design)
     - [Spatial-Temporal Cross Attention Design](##Spatial-Temporal Cross Attention Design)
-  - [Optimizing Object Query](#Optimizing Object Query)
+  - [Optimizing Object Query](#Optimizing-Object-Query)
     - [Adding Position Information into Query](##Adding Position Information into Query)
     - [Adding Extra Supervision into Query](##Adding Extra Supervision into Query)
-  - [Using Query For Association](#Using Query For Association)
+  - [Using Query For Association](#Using-Query-For-Association)
     - [Query as Instance Association](##Query as Instance Association)
     - [Query as Linking Multi-Tasks](##Query as Linking Multi-Tasks)
-  - [Conditional Query Generation](#Conditional Query Generation)
+  - [Conditional Query Generation](#Conditional-Query-Generation)
     - [Conditional Query Fusion on Language Features](##Conditional Query Fusion on Language Features)
     - [Conditional Query Fusion on Cross Image Features](##Conditional Query Fusion on Cross Image Features)
-  - [Turning Foundation Models](#Turning Foundation Models)
+  - [Tuning Foundation Models](#Tuning-Foundation-Models)
     - [Vision Adapter](##Vision Adapter)
     - [Open Vocabulary Learning](##Open Vocabulary Learning)
   
-- [Related Domains and Beyond](#Related Domain and Beyond)
-  - [Point Cloud Segmentation](#Point Cloud Segmentation)
-  - [Domain-aware Segmentation](#Domain-aware Segmentation)
-  - [Label and Model Efficient Segmentation](#Label and Model Efficient Segmentation)
-  - [Class Agnostic Segmentation and Tracking](#Class Agnostic Segmentation and Tracking)
-  - [Medical Image Segmentation](#Medical Image Segmentation)
+- [Related Domains and Beyond](#Related-Domains-and-Beyond)
+  - [Point Cloud Segmentation](#Point-Cloud-Segmentation)
+  - [Domain-aware Segmentation](#Domain-aware-Segmentation)
+  - [Label and Model Efficient Segmentation](#Label-and-Model-Efficient-Segmentation)
+  - [Class Agnostic Segmentation and Tracking](#Class-Agnostic-Segmentation-and-Tracking)
+  - [Medical Image Segmentation](#Medical-Image-Segmentation)
     
 ## Methods: A Survey
 
@@ -207,16 +207,16 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 
 #### Adding Extra Supervision into Query
 
-| Year |  Venue  |         Acronym          | Paper Title                                                                                                                        | Code/Project                                                      |
-|:----:|:-------:|:------------------------:|------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| 2022 |  CVPR   |         DN-DETR          | [Dndetr:Accelerate detr training by introducing query denoising](https://arxiv.org/abs/2203.01305)                                 | [Code](https://github.com/IDEA-opensource/DN-DETR)                |
-| 2023 |  ICLR   |           DINO           | [DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection](https://arxiv.org/abs/2203.03605)                | [Code](https://github.com/IDEA-Research/DINO)                     |
-| 2023 |  CVPR   |        Mp-Former         | [Mp-former: Mask-piloted transformer for image segmentation](https://arxiv.org/abs/2303.07336)                                     | [Code](https://github.com/IDEA-Research/MP-Former)                |
-| 2023 |  CVPR   |        Mask-DINO         | [Mask DINO: Towards A Unified Transformer-based Framework for Object Detection and Segmentation](https://arxiv.org/abs/2206.02777) | [Code](https://github.com/IDEACVR/MaskDINO)                       |
-| 2022 | NeurIPS | instance-unique querying | [Learning equivariant segmentation with instance-unique querying](https://arxiv.org/abs/2210.00911)                                                                | [Code](https://github.com/JamesLiang819/Instance_Unique_Querying) |
-| 2023 |  CVPR   |          H-DETR          | [DETRs with Hybrid Matching](https://arxiv.org/abs/2207.13080)                                                                     | [Code](https://github.com/HDETR)                                  |
-| 2022 |  arxiv  |        Group-DETR        | [Group detr: Fast detr training with group-wise one-to-many assignment](https://arxiv.org/abs/2207.13085)                                                          | N/A                                                               |
-| 2022 |  arxiv  |         Co-DETR          | [Detrs with collaborative hybrid assignments training](https://arxiv.org/abs/2211.12860)                                                                           | [Code](https://github.com/Sense-X/Co-DETR)                                                          |
+| Year |  Venue  |  Acronym   | Paper Title                                                                                                                        | Code/Project                                                      |
+|:----:|:-------:|:----------:|------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| 2022 |  CVPR   |  DN-DETR   | [Dndetr:Accelerate detr training by introducing query denoising](https://arxiv.org/abs/2203.01305)                                 | [Code](https://github.com/IDEA-opensource/DN-DETR)                |
+| 2023 |  ICLR   |    DINO    | [DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection](https://arxiv.org/abs/2203.03605)                | [Code](https://github.com/IDEA-Research/DINO)                     |
+| 2023 |  CVPR   | Mp-Former  | [Mp-former: Mask-piloted transformer for image segmentation](https://arxiv.org/abs/2303.07336)                                     | [Code](https://github.com/IDEA-Research/MP-Former)                |
+| 2023 |  CVPR   | Mask-DINO  | [Mask DINO: Towards A Unified Transformer-based Framework for Object Detection and Segmentation](https://arxiv.org/abs/2206.02777) | [Code](https://github.com/IDEACVR/MaskDINO)                       |
+| 2022 | NeurIPS |    N/A     | [Learning equivariant segmentation with instance-unique querying](https://arxiv.org/abs/2210.00911)                                                                | [Code](https://github.com/JamesLiang819/Instance_Unique_Querying) |
+| 2023 |  CVPR   |   H-DETR   | [DETRs with Hybrid Matching](https://arxiv.org/abs/2207.13080)                                                                     | [Code](https://github.com/HDETR)                                  |
+| 2022 |  arxiv  | Group-DETR | [Group detr: Fast detr training with group-wise one-to-many assignment](https://arxiv.org/abs/2207.13085)                                                          | N/A                                                               |
+| 2022 |  arxiv  |  Co-DETR   | [Detrs with collaborative hybrid assignments training](https://arxiv.org/abs/2211.12860)                                                                           | [Code](https://github.com/Sense-X/Co-DETR)                                                          |
 
 
 
@@ -273,7 +273,6 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 | 2022 | NeurIPS |    MM-Former    | [Mask Matching Transformer for Few-Shot Segmentation](https://arxiv.org/abs/2301.01208)                                                                      | [Code](https://github.com/jiaosiyu1999/mmformer)                                       |
 | 2022 |  ECCV   |    AAFormer     | [Adaptive Agent Transformer for Few-shot Segmentation](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136890035.pdf)                               | N/A                                            |
 | 2023 |  arxiv  | ReferecnceTwice | [Reference Twice: A Simple and Unified Baseline for Few-Shot Instance Segmentation](https://arxiv.org/abs/2301.01156)                                        | [Code]()                                                           |
-|      |         |                 |                                                                                                                                                              | [Code]()                                                           |
 |      |         |                 |                                                                                                                                                              | [Code]()                                                           |
 
 ### Tuning Foundation Models
