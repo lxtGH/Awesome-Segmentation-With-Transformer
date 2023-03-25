@@ -1,6 +1,7 @@
 ### Tuning Foundation Models
 
 #### Vision Adapter
+
 | Year | Venue |   Acronym   | Paper Title                                                                                                  | Code/Project                                                     |
 |:----:|:-----:|:-----------:|--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | 2022 | CVPR  |   CoCoOp    | [Conditional Prompt Learning for Vision-Language Models](https://arxiv.org/abs/2203.05557)                   | [Code](https://github.com/KaiyangZhou/CoOp)                      |
@@ -11,8 +12,8 @@
 | 2022 | CVPR  |   CLIPSeg   | [Image Segmentation Using Text and Image Prompts](https://arxiv.org/abs/2112.10003)                          | [Code](https://eckerlab.org/code/clipseg)                        |
 | 2023 | CVPR  |  OneFormer  | [OneFormer: One Transformer to Rule Universal Image Segmentation](https://arxiv.org/abs/2211.06220)          | [Code](https://github.com/SHI-Labs/OneFormer)                    |
 
-
 #### Open Vocabulary Learning
+
 | Year | Venue |  Acronym  | Paper Title                                                                                                                                | Code/Project                                                                                     |
 |:----:|:-----:|:---------:|--------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | 2021 | CVPR  |  OVR-CNN  | [Open-Vocabulary Object Detection Using Captions](https://arxiv.org/abs/2011.10678)                                                        | [Code](https://github.com/alirezazareian/ovr-cnn)                                                |
@@ -31,9 +32,7 @@
 | 2022 | CVPR  |  OW-DETR  | [OW-DETR: Open-world Detection Transformer](https://arxiv.org/abs/2112.01513)                                                              | [Code](https://github.com/akshitac8/OW-DETR)                                                     |
 | 2023 | CVPR  |   PROB    | [PROB: Probabilistic Objectness for Open World Object Detection](https://arxiv.org/abs/2212.01424)                                         | [Code](https://github.com/orrzohar/PROB)                                                         |
 
-
-### Related Domains and Beyond 
-
+### Related Domains and Beyond
 
 #### Point Cloud Segmentation
 
@@ -48,11 +47,6 @@
 | 2022 |  ICRA   |         Mask3D         | [Mask3D for 3D Semantic Instance Segmentation](https://arxiv.org/abs/2210.03105)                                          | [Code](https://github.com/JonasSchult/Mask3D)                    |
 | 2023 |  AAAI   |        SPFormer        | [Superpoint Transformer for 3D Scene Instance Segmentation](https://arxiv.org/abs/2211.15766)                             | [Code](https://github.com/sunjiahao1999/SPFormer)                |
 | 2023 |  AAAI   |          PUPS          | [PUPS: Point Cloud Unified Panoptic Segmentation](https://arxiv.org/abs/2302.06185)                                       | N/A                                                              |
-
-
-
-
-
 
 #### Domain-aware Segmentation
 
@@ -71,28 +65,37 @@
 | 2022 |  CVPR  |      WD2      | [Unifying Panoptic Segmentation for Autonomous Driving](https://openaccess.thecvf.com/content/CVPR2022/papers/Zendel_Unifying_Panoptic_Segmentation_for_Autonomous_Driving_CVPR_2022_paper.pdf) | [Data](https://github.com/ozendelait/wilddash_scripts)  |
 | 2023 | arXiv  |    TarVIS     | [TarViS: A Unified Approach for Target-based Video Segmentation](https://arxiv.org/abs/2301.02657)                                                                                              | N/A                                                     |
 
-
-
-
-
-
-
-
-
 #### Label and Model Efficient Segmentation
 
-| Year |  Venue  |      Acronym       | Paper Title                                                                                                    | Code/Project                                                 |
-|:----:|:-------:|:------------------:|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-|  |     |                |                               |           |
+| Year | Venue |  Acronym  | Paper Title                                                                                                                                    | Code/Project                                   |
+|:----:|:-----:|:---------:|------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| 2022 | CVPR  | MCTformer | [Multi-class Token Transformer for Weakly Supervised Semantic Segmentation](https://arxiv.org/abs/2203.02891)                                  | [Code](https://github.com/xulianuwa/MCTformer) |
+| 2020 | CVPR  |    PCM    | [Self-supervised Equivariant Attention Mechanism for Weakly Supervised Semantic Segmentation](https://arxiv.org/abs/2004.04581)                | [Code](https://github.com/YudeWang/SEAM)       |
+| 2022 | ECCV  |  ViT-PCM  | [Max Pooling with Vision Transformers reconciles class and shape in weakly supervised semantic segmentation](https://arxiv.org/abs/2210.17400) | [Code](https://github.com/deepplants/ViT-PCM)  |
+
+
 
 #### Class Agnostic Segmentation and Tracking
 
-| Year |  Venue  |      Acronym       | Paper Title                                                                                                    | Code/Project                                                 |
-|:----:|:-------:|:------------------:|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-|  |     |                |                               |           |
+| Year |  Venue  |   Acronym   | Paper Title                                                                                                                              | Code/Project                                   |
+|:----:|:-------:|:-----------:|------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| 2022 |  CVPR   | Transfiner  | [Mask Transfiner for High-Quality Instance Segmentation](https://arxiv.org/abs/2111.13673)                                               | [Code](https://github.com/SysCV/transfiner)    |
+| 2022 |  ECCV   |     VMT     | [Video Mask Transfiner for High-Quality Video Instance Segmentation](https://arxiv.org/abs/2207.14012)                                   | [Code](https://github.com/SysCV/vmt)           |
+| 2022 |  arXiv  | SimpleClick | [SimpleClick: Interactive Image Segmentation with Simple Vision Transformers](https://arxiv.org/abs/2210.11006)                          | [Code](https://github.com/uncbiag/simpleclick) |
+| 2023 |  ICLR   |  PatchDCT   | [PatchDCT: Patch Refinement for High Quality Instance Segmentation](https://arxiv.org/abs/2302.02693)                                    | [Code](https://github.com/olivia-w12/PatchDCT) |
+| 2019 |  ICCV   |     STM     | [Video Object Segmentation using Space-Time Memory Networks](https://arxiv.org/abs/1904.00607)                                           | [Code](https://github.com/seoungwugoh/STM)     |
+| 2021 | NeurIPS |     AOT     | [Associating Objects with Transformers for Video Object Segmentation](https://arxiv.org/abs/2106.02638)                                  | [Code](https://github.com/z-x-yang/AOT)        |
+| 2021 | NeurIPS |    STCN     | [Rethinking Space-Time Networks with Improved Memory Coverage for Efficient Video Object Segmentation](https://arxiv.org/abs/2106.05210) | [Code](https://github.com/hkchengrex/STCN)     |
+| 2022 |  ECCV   |    XMem     | [XMem: Long-Term Video Object Segmentation with an Atkinson-Shiffrin Memory Model](https://arxiv.org/abs/2207.07115)                     | [Code](https://hkchengrex.github.io/XMem)      |
+| 2022 |  CVPR   |    PCVOS    | [Per-Clip Video Object Segmentation](https://arxiv.org/abs/2208.01924)                                                                   | [Code](https://github.com/pkyong95/PCVOS)      |
+| 2023 |  CVPR   |     N/A     | [Look Before You Match: Instance Understanding Matters in Video Object Segmentation](https://arxiv.org/abs/2212.06826)                   | N/A                                            |
+
+
+
+
 
 #### Medical Image Segmentation
 
-| Year |  Venue  |      Acronym       | Paper Title                                                                                                    | Code/Project                                                 |
-|:----:|:-------:|:------------------:|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-|  |     |                |                               |           |
+| Year | Venue | Acronym | Paper Title | Code/Project |
+|:----:|:-----:|:-------:|-------------|--------------|
+|      |       |         |             |              |
