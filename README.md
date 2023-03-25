@@ -1,8 +1,7 @@
-
  <!-- # <p align=center>`awesome gan-inversion`</p> -->
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/lxtGH/Trans_Seg_Survey/issues)
-![visitors](https://visitor-badge.glitch.me/badge?style=flat-square&page_id=lxtGH/Trans_Seg_Survey) 
+![visitors](https://visitor-badge.glitch.me/badge?style=flat-square&page_id=lxtGH/Trans_Seg_Survey)
 <br />
 <p align="center">
   <h1 align="center">Transformer-Based Visual Segmentation: A Survey</h1>
@@ -38,15 +37,16 @@
   </p>
 <br />
 
-This repo is used for recording, tracking and benchmarking several recent transformer-based visual segmentation methods, as a supplement for our [survey]().  
-If you find any work missing or have any suggestions (papers, implementations and other resources), feel free to [pull requests](https://github.com). 
+This repo is used for recording, tracking and benchmarking several recent transformer-based visual segmentation methods,
+as a supplement for our [survey]().  
+If you find any work missing or have any suggestions (papers, implementations and other resources), feel free
+to [pull requests](https://github.com).
 We will add the missing papers in this repo ASAP.
 
 ### Highlight!!
 
-Previous Transformer surveys divide the methods by the different tasks and settings. 
+Previous Transformer surveys divide the methods by the different tasks and settings.
 Different from these, we re-visit and group the existing transformer-based methods from the **technical perspective.**
-
 
 ## Introduction
 
@@ -54,145 +54,135 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 
 ![Alt Text](./figs/survey_pipeline.PNG)
 
-
 ## Summary of Contents
 
 - [Methods: A Survey](#methods-a-survey)
-  - [Meta-Architecture](#meta-architecture)
-  - [Strong Representation](#Strong-Representation)
-  - [Interaction Design in Decoder](#Interaction-Design-in-Decoder)
-  - [Optimizing Object Query](#Optimizing-Object-Query)
-  - [Using Query For Association](#Using-Query-For-Association)
-  - [Conditional Query Generation](#Conditional-Query-Generation)
-  - [Tuning Foundation Models](#Tuning-Foundation-Models)
-
+    - [Meta-Architecture](#meta-architecture)
+    - [Strong Representation](#Strong-Representation)
+    - [Interaction Design in Decoder](#Interaction-Design-in-Decoder)
+    - [Optimizing Object Query](#Optimizing-Object-Query)
+    - [Using Query For Association](#Using-Query-For-Association)
+    - [Conditional Query Generation](#Conditional-Query-Generation)
+    - [Tuning Foundation Models](#Tuning-Foundation-Models)
 
 [//]: # (  )
-- [Related Domains and Beyond](#Related-Domains-and-Beyond)
-  - [Point Cloud Segmentation](#Point-Cloud-Segmentation)
-  - [Domain-aware Segmentation](#Domain-aware-Segmentation)
-  - [Label and Model Efficient Segmentation](#Label-and-Model-Efficient-Segmentation)
-  - [Class Agnostic Segmentation and Tracking](#Class-Agnostic-Segmentation-and-Tracking)
-  - [Medical Image Segmentation](#Medical-Image-Segmentation)
-    
-## Methods: A Survey
 
+- [Related Domains and Beyond](#Related-Domains-and-Beyond)
+    - [Point Cloud Segmentation](#Point-Cloud-Segmentation)
+    - [Domain-aware Segmentation](#Domain-aware-Segmentation)
+    - [Label and Model Efficient Segmentation](#Label-and-Model-Efficient-Segmentation)
+    - [Class Agnostic Segmentation and Tracking](#Class-Agnostic-Segmentation-and-Tracking)
+    - [Medical Image Segmentation](#Medical-Image-Segmentation)
+
+## Methods: A Survey
 
 ### Meta-Architecture
 
-| Year  |  Venue  |     Acronym     | Paper Title                                                                                              | Code/Project                                                 |
-|:-----:|:-------:|:---------------:|----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| 2020  |  ECCV   |      DETR       | [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872)                        | [Code](https://github.com/facebookresearch/detr)             |
-| 2021  |  ICLR   | Deformable DETR | [Deformable DETR: Deformable Transformers for End-to-End Object Detection](https://arxiv.org/abs/2010.04159) | [Code](https://github.com/fundamentalvision/Deformable-DETR) |
-| 2021  |  CVPR   |   Max-Deeplab   | [MaX-DeepLab: End-to-End Panoptic Segmentation with Mask Transformers](https://arxiv.org/abs/2012.00759) | [Code](https://github.com/google-research/deeplab2)          |
-| 2021  | NeurIPS |   MaskFormer    | [MaskFormer: Per-Pixel Classification is Not All You Need for Semantic Segmentation](http://arxiv.org/abs/2107.06278) | [Code](https://github.com/facebookresearch/MaskFormer)       |
-| 2021  | NeurIPS |      K-Net      | [K-Net: Towards Unified Image Segmentation](https://arxiv.org/abs/2106.14855)                            | [Code](https://github.com/ZwwWayne/K-Net)                    |
-| 2023  |  CVPR   |   Lite-DETR     | [Lite detr: An interleaved multi-scale encoder for efficient detr](https://arxiv.org/pdf/2303.07335) | [Code](https://github.com/IDEA-Research/Lite-DETR)                                                     |
+| Year |  Venue  |     Acronym     | Paper Title                                                                                                           | Code/Project                                                 |
+|:----:|:-------:|:---------------:|-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| 2020 |  ECCV   |      DETR       | [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872)                                     | [Code](https://github.com/facebookresearch/detr)             |
+| 2021 |  ICLR   | Deformable DETR | [Deformable DETR: Deformable Transformers for End-to-End Object Detection](https://arxiv.org/abs/2010.04159)          | [Code](https://github.com/fundamentalvision/Deformable-DETR) |
+| 2021 |  CVPR   |   Max-Deeplab   | [MaX-DeepLab: End-to-End Panoptic Segmentation with Mask Transformers](https://arxiv.org/abs/2012.00759)              | [Code](https://github.com/google-research/deeplab2)          |
+| 2021 | NeurIPS |   MaskFormer    | [MaskFormer: Per-Pixel Classification is Not All You Need for Semantic Segmentation](http://arxiv.org/abs/2107.06278) | [Code](https://github.com/facebookresearch/MaskFormer)       |
+| 2021 | NeurIPS |      K-Net      | [K-Net: Towards Unified Image Segmentation](https://arxiv.org/abs/2106.14855)                                         | [Code](https://github.com/ZwwWayne/K-Net)                    |
+| 2023 |  CVPR   |    Lite-DETR    | [Lite detr: An interleaved multi-scale encoder for efficient detr](https://arxiv.org/pdf/2303.07335)                  | [Code](https://github.com/IDEA-Research/Lite-DETR)           |
 
 ### Strong Representation
 
 #### Better ViTs Design
 
-| Year |  Venue  |   Acronym    | Paper Title                                                                                                                    | Code/Project                                     |
-|:----:|:-------:|:------------:|--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| 2021 |  CVPR   |     SETR     | [Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers](https://arxiv.org/abs/2012.15840) | [Code](https://github.com/fudan-zvg/SETR)        |
-| 2021 |  ICCV   |   MviT-V1    | [Multiscale vision transformers](https://arxiv.org/abs/2104.11227)                                                             | [Code](https://github.com/facebookresearch/mvit) |
-| 2022 |  CVPR   |   MviT-V2    | [MViTv2: Improved Multiscale Vision Transformers for Classification and Detection](https://arxiv.org/abs/2112.01526)           | [Code](https://github.com/facebookresearch/mvit) |
-| 2021 | NeurIPS |     XCIT     | [Xcit: Crosscovariance image transformers](https://arxiv.org/abs/2106.09681)                                                   | [Code](https://github.com/facebookresearch/xci)  |
-| 2021 |  ICCV   | Pyramid VIT  | [Pyramid vision transformer: A versatile backbone for dense prediction without convolutions](https://arxiv.org/abs/2102.12122) | [Code](https://github.com/whai362/PVT)           |
-| 2021 |  ICCV   |   CorssViT   | [CrossViT: Cross-Attention Multi-Scale Vision Transformer for Image Classification](https://arxiv.org/abs/2103.14899)          | [Code](https://github.com/IBM/CrossViT)          |
-| 2021 |  ICCV   |     CoaT     | [Co-Scale Conv-Attentional Image Transformers](https://arxiv.org/abs/2104.06399)                                               | [Code](https://github.com/mlpc-ucsd/CoaT)        |
-| 2022 |  CVPR   |    MPViT     | [MPViT: Multi-Path Vision Transformer for Dense Prediction](https://arxiv.org/abs/2112.11010)                                  | [Code](https://github.com/youngwanLEE/MPViT)     |
-| 2022 | NeurIPS |    SegViT    | [SegViT: Semantic Segmentation with Plain Vision Transformers](https://arxiv.org/abs/2210.05844)                               | [Code](https://github.com/zbwxp/SegVit)          |
-| 2022 |  arxiv  |   RSSeg      | [Representation Separation for SemanticSegmentation with Vision Transformers](https://arxiv.org/abs/2212.13764)                                                | N/A                                              |
-
+| Year |  Venue  |   Acronym   | Paper Title                                                                                                                    | Code/Project                                     |
+|:----:|:-------:|:-----------:|--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| 2021 |  CVPR   |    SETR     | [Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers](https://arxiv.org/abs/2012.15840) | [Code](https://github.com/fudan-zvg/SETR)        |
+| 2021 |  ICCV   |   MviT-V1   | [Multiscale vision transformers](https://arxiv.org/abs/2104.11227)                                                             | [Code](https://github.com/facebookresearch/mvit) |
+| 2022 |  CVPR   |   MviT-V2   | [MViTv2: Improved Multiscale Vision Transformers for Classification and Detection](https://arxiv.org/abs/2112.01526)           | [Code](https://github.com/facebookresearch/mvit) |
+| 2021 | NeurIPS |    XCIT     | [Xcit: Crosscovariance image transformers](https://arxiv.org/abs/2106.09681)                                                   | [Code](https://github.com/facebookresearch/xci)  |
+| 2021 |  ICCV   | Pyramid VIT | [Pyramid vision transformer: A versatile backbone for dense prediction without convolutions](https://arxiv.org/abs/2102.12122) | [Code](https://github.com/whai362/PVT)           |
+| 2021 |  ICCV   |  CorssViT   | [CrossViT: Cross-Attention Multi-Scale Vision Transformer for Image Classification](https://arxiv.org/abs/2103.14899)          | [Code](https://github.com/IBM/CrossViT)          |
+| 2021 |  ICCV   |    CoaT     | [Co-Scale Conv-Attentional Image Transformers](https://arxiv.org/abs/2104.06399)                                               | [Code](https://github.com/mlpc-ucsd/CoaT)        |
+| 2022 |  CVPR   |    MPViT    | [MPViT: Multi-Path Vision Transformer for Dense Prediction](https://arxiv.org/abs/2112.11010)                                  | [Code](https://github.com/youngwanLEE/MPViT)     |
+| 2022 | NeurIPS |   SegViT    | [SegViT: Semantic Segmentation with Plain Vision Transformers](https://arxiv.org/abs/2210.05844)                               | [Code](https://github.com/zbwxp/SegVit)          |
+| 2022 |  arxiv  |    RSSeg    | [Representation Separation for SemanticSegmentation with Vision Transformers](https://arxiv.org/abs/2212.13764)                | N/A                                              |
 
 #### Hybrid CNNs/Transformers/MLPs
 
-| Year |  Venue  |  Acronym   | Paper Title                                                                                                                        | Code/Project                                                 |
-|:----:|:-------:|:----------:|------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| 2021 |  ICCV   |    Swin    | [Swin transformer: Hierarchical vision transformer using shifted windows](https://arxiv.org/abs/2103.14030)                        | [Code](https://github.com/microsoft/Swin-Transformer)                                         |
-| 2022 |  CVPR   |  Swin-v2   | [Swin Transformer V2: Scaling Up Capacity and Resolution](https://arxiv.org/abs/2111.09883)                                        | [Code](https://github.com/microsoft/Swin-Transformer)                                         |
-| 2021 | NeurIPS | Segformer  | [SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers](https://arxiv.org/abs/2105.15203)             | [Code](http://github.com/NVlabs/SegFormer)                                         |
-| 2022 |  CVPR   |    CMT     | [CMT: Convolutional Neural Networks Meet Vision Transformers](https://arxiv.org/abs/2107.06263)                                    | [Code](https://github.com/FlyEgle/CMT-pytorch)                                         |
-| 2021 | NeurIPS |   Twins    | [Twins: Revisiting the Design of Spatial Attention in Vision Transformers](https://arxiv.org/abs/2104.13840)                       | [Code](https://github.com/Meituan-AutoML/Twins)                                         |
-| 2021 |  ICCV   |    CvT     | [CvT: Introducing Convolutions to Vision Transformers](https://arxiv.org/abs/2103.15808)                                           | [Code](https://github.com/microsoft/CvT)                                         |
-| 2021 | NeurIPS |   Vitae    | [Vitae: Vision transformer advanced by exploring intrinsic inductive bias](https://arxiv.org/abs/2106.03348)                       | [Code](https://github.com/ViTAE-Transformer/ViTAE-Transformer)                                         |
-| 2022 |  CVPR   |  ConvNext  | [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)                                                                        | [Code](https://github.com/facebookresearch/ConvNeXt)                                         |
-| 2022 | NeurIPS |  SegNext   | [SegNeXt:Rethinking Convolutional Attention Design for Semantic Segmentation](https://github.com/visual-attention-network/segnext) | [Code](https://github.com/visual-attention-network/segnext)             |
-| 2022 |  CVPR   | PoolFormer | [PoolFormer: MetaFormer Is Actually What You Need for Vision](https://arxiv.org/abs/2111.11418)                                    | [Code](https://github.com/sail-sg/poolformer)             |
-| 2022 |  arxiv  |    STM     | [Demystify Transformers & Convolutions in Modern Image Deep Networks](https://arxiv.org/abs/2211.05781)                            | [Code](https://github.com/OpenGVLab/STM-Evaluation)             |
-
-
+| Year |  Venue  |  Acronym   | Paper Title                                                                                                                        | Code/Project                                                   |
+|:----:|:-------:|:----------:|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| 2021 |  ICCV   |    Swin    | [Swin transformer: Hierarchical vision transformer using shifted windows](https://arxiv.org/abs/2103.14030)                        | [Code](https://github.com/microsoft/Swin-Transformer)          |
+| 2022 |  CVPR   |  Swin-v2   | [Swin Transformer V2: Scaling Up Capacity and Resolution](https://arxiv.org/abs/2111.09883)                                        | [Code](https://github.com/microsoft/Swin-Transformer)          |
+| 2021 | NeurIPS | Segformer  | [SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers](https://arxiv.org/abs/2105.15203)             | [Code](http://github.com/NVlabs/SegFormer)                     |
+| 2022 |  CVPR   |    CMT     | [CMT: Convolutional Neural Networks Meet Vision Transformers](https://arxiv.org/abs/2107.06263)                                    | [Code](https://github.com/FlyEgle/CMT-pytorch)                 |
+| 2021 | NeurIPS |   Twins    | [Twins: Revisiting the Design of Spatial Attention in Vision Transformers](https://arxiv.org/abs/2104.13840)                       | [Code](https://github.com/Meituan-AutoML/Twins)                |
+| 2021 |  ICCV   |    CvT     | [CvT: Introducing Convolutions to Vision Transformers](https://arxiv.org/abs/2103.15808)                                           | [Code](https://github.com/microsoft/CvT)                       |
+| 2021 | NeurIPS |   Vitae    | [Vitae: Vision transformer advanced by exploring intrinsic inductive bias](https://arxiv.org/abs/2106.03348)                       | [Code](https://github.com/ViTAE-Transformer/ViTAE-Transformer) |
+| 2022 |  CVPR   |  ConvNext  | [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)                                                                        | [Code](https://github.com/facebookresearch/ConvNeXt)           |
+| 2022 | NeurIPS |  SegNext   | [SegNeXt:Rethinking Convolutional Attention Design for Semantic Segmentation](https://github.com/visual-attention-network/segnext) | [Code](https://github.com/visual-attention-network/segnext)    |
+| 2022 |  CVPR   | PoolFormer | [PoolFormer: MetaFormer Is Actually What You Need for Vision](https://arxiv.org/abs/2111.11418)                                    | [Code](https://github.com/sail-sg/poolformer)                  |
+| 2022 |  arxiv  |    STM     | [Demystify Transformers & Convolutions in Modern Image Deep Networks](https://arxiv.org/abs/2211.05781)                            | [Code](https://github.com/OpenGVLab/STM-Evaluation)            |
 
 #### Self-Supervised Learning
 
-| Year |  Venue  |   Acronym   | Paper Title                                                                                                | Code/Project                                               |
-|:----:|:-------:|:-----------:|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| 2021 |  ICCV   |   MOCOV3    | [An Empirical Study of Training Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.02057)     | [Code](https://github.com/facebookresearch/moco-v3)        |
-| 2022 |  ICLR   |    Beit     | [Beit: Bert pre-training of image transformers](https://arxiv.org/abs/2106.08254)                          | [Code](https://github.com/microsoft/unilm/tree/master/beit) |
-| 2022 |  CVPR   |  MaskFeat   | [Masked Feature Prediction for Self-Supervised Visual Pre-Training](https://arxiv.org/abs/2112.09133)      | [Code](https://github.com/facebookresearch/SlowFast)       |
-| 2022 |  CVPR   |     MAE     | [Masked Autoencoders Are Scalable Vision Learners](https://arxiv.org/abs/2111.06377)                       | [Code](https://github.com/facebookresearch/mae)            |
-| 2022 | NeurIPS |   ConvMAE   | [MCMAE: Masked Convolution Meets Masked Autoencoders](https://arxiv.org/abs/2303.05475)                    | [Code](https://github.com/Alpha-VL/ConvMAE)                |
-| 2023 |  ICLR   |    Spark    | [SparK: the first successful BERT/MAE-style pretraining on any convolutional networks](https://github.com/keyu-tian/SparK)     | [Code](https://github.com/keyu-tian/SparK)       |
-| 2022 |  arxiv  |    FLIP     | [Scaling Language-Image Pre-training via Masking](https://arxiv.org/abs/2212.00794)                        | N/A                                                        |
-| 2023 |  arxiv  | ConvNeXt V2 | [ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders](http://arxiv.org/abs/2301.00808) | [Code](https://github.com/facebookresearch/ConvNeXt-V2)    |
-
+| Year |  Venue  |   Acronym   | Paper Title                                                                                                                | Code/Project                                                |
+|:----:|:-------:|:-----------:|----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| 2021 |  ICCV   |   MOCOV3    | [An Empirical Study of Training Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.02057)                     | [Code](https://github.com/facebookresearch/moco-v3)         |
+| 2022 |  ICLR   |    Beit     | [Beit: Bert pre-training of image transformers](https://arxiv.org/abs/2106.08254)                                          | [Code](https://github.com/microsoft/unilm/tree/master/beit) |
+| 2022 |  CVPR   |  MaskFeat   | [Masked Feature Prediction for Self-Supervised Visual Pre-Training](https://arxiv.org/abs/2112.09133)                      | [Code](https://github.com/facebookresearch/SlowFast)        |
+| 2022 |  CVPR   |     MAE     | [Masked Autoencoders Are Scalable Vision Learners](https://arxiv.org/abs/2111.06377)                                       | [Code](https://github.com/facebookresearch/mae)             |
+| 2022 | NeurIPS |   ConvMAE   | [MCMAE: Masked Convolution Meets Masked Autoencoders](https://arxiv.org/abs/2303.05475)                                    | [Code](https://github.com/Alpha-VL/ConvMAE)                 |
+| 2023 |  ICLR   |    Spark    | [SparK: the first successful BERT/MAE-style pretraining on any convolutional networks](https://github.com/keyu-tian/SparK) | [Code](https://github.com/keyu-tian/SparK)                  |
+| 2022 |  arxiv  |    FLIP     | [Scaling Language-Image Pre-training via Masking](https://arxiv.org/abs/2212.00794)                                        | N/A                                                         |
+| 2023 |  arxiv  | ConvNeXt V2 | [ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders](http://arxiv.org/abs/2301.00808)                 | [Code](https://github.com/facebookresearch/ConvNeXt-V2)     |
 
 ### Interaction Design in Decoder
 
-
 #### Improved Cross Attention Design
 
-| Year |  Venue |      Acronym       | Paper Title                                                                                                                                                                                                | Code/Project                                            |
-|:----:|:------:|:------------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| 2021 |  CVPR  |    Sparse R-CNN    | [Sparse R-CNN: End-to-End Object Detection with Learnable Proposals](https://arxiv.org/abs/2011.12450)                                                                                                     | [Code](https://github.com/PeizeSun/SparseR-CNN)         |
-| 2022 |  CVPR  |      AdaMixer      | [AdaMixer: A Fast-Converging Query-Based Object Detector](https://arxiv.org/abs/2203.16507)                                                                                                                | [Code](https://github.com/MCG-NJU/AdaMixer)             |
-| 2021 |  CVPR  |    MaX-DeepLab     | [MaX-DeepLab: End-to-End Panoptic Segmentation with Mask Transformers](https://arxiv.org/abs/2012.00759)                                                                                                   | [Code](https://github.com/google-research/deeplab2)     |
-| 2021 | NeurIPS |       K-Net        | [K-Net: Towards Unified Image Segmentation](https://arxiv.org/abs/2106.14855)                                                                                                                              | [Code](https://github.com/ZwwWayne/K-Net/)              |
-| 2022 |  CVPR  |    Mask2Former     | [Masked-attention Mask Transformer for Universal Image Segmentation](https://arxiv.org/abs/2112.01527)                                                                                                     | [Code](https://github.com/facebookresearch/Mask2Former) |
-| 2022 |  ECCV  |    kMaX-DeepLab    | [k-means Mask Transformer](https://arxiv.org/abs/2207.04044)                                                                                                                                               | [Code](https://github.com/google-research/deeplab2)     |
-| 2021 |  ICCV  |     QueryInst      | [Instances as queries](https://arxiv.org/abs/2105.01928)                                                                                                                                                   | [Code](https://github.com/hustvl/QueryInst)             |
-| 2021 |  arxiv |        ISTR        | [ISTR: End-to-End Instance Segmentation via Transformers](https://arxiv.org/abs/2105.00637)                                                                                                                | [Code](https://github.com/hujiecpp/ISTR)                |
-| 2021 | NeurIPS |        SOLQ        | [Solq: Segmenting objects by learning queries](https://arxiv.org/abs/2106.02351)                                                                                                                           | [Code](https://github.com/megvii-research/SOLQ)         |
-| 2022 |  CVPR  | Panoptic Segformer | [Panoptic SegFormer: Delving Deeper into Panoptic Segmentation with Transformers](https://arxiv.org/abs/2109.03814)                                                                                        | [Code](https://github.com/zhiqi-li/Panoptic-SegFormer)  |
-| 2022 |  CVPR  |    CMT-Deeplab     | [CMT-DeepLab: Clustering Mask Transformers for Panoptic Segmentation](https://arxiv.org/abs/2206.08948)                                                                                                    | N/A                                                     |
-| 2022 |  CVPR  |     SparseInst     | [Sparse Instance Activation for Real-Time Instance Segmentation](https://arxiv.org/abs/2203.12827)                                                                                                         | [Code](https://github.com/hustvl/SparseInst)            |
-| 2022 |  CVPR  |      SAM-DETR      | [Accelerating DETR Convergence via Semantic-Aligned Matching](https://arxiv.org/abs/2203.06883)                                                                                                            | [Code](https://github.com/ZhangGongjie/SAM-DETR)        |
-| 2021 |  ICCV  |     SMCA-DETR      | [Fast Convergence of DETR with Spatially Modulated Co-Attention](https://arxiv.org/abs/2101.07448)                                                                                                         | [Code](https://github.com/gaopengcuhk/SMCA-DETR)        |
-| 2021 |  BMVC  |      ACT-DETR      | [End-to-End Object Detection with Adaptive Clustering Transformer](https://www.bmvc2021-virtualconference.com/assets/papers/0709.pdf)                                                                      | [Code](https://github.com/gaopengcuhk/SMCA-DETR)        |
-| 2021 |  ICCV  |    Dynamic DETR    | [Dynamic DETR: End-to-End Object Detection with Dynamic Attention](https://ieeexplore.ieee.org/document/9709981)                                                                                           | N/A                                                     |
-| 2022 |  ICLR  |    Sparse DETR     | [Sparse DETR: Efficient End-to-End Object Detection with Learnable Sparsity](https://arxiv.org/abs/2111.14330)                                                                                             | [Code](https://github.com/kakaobrain/sparse-detr)       |
-
+| Year |  Venue  |      Acronym       | Paper Title                                                                                                                           | Code/Project                                            |
+|:----:|:-------:|:------------------:|---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| 2021 |  CVPR   |    Sparse R-CNN    | [Sparse R-CNN: End-to-End Object Detection with Learnable Proposals](https://arxiv.org/abs/2011.12450)                                | [Code](https://github.com/PeizeSun/SparseR-CNN)         |
+| 2022 |  CVPR   |      AdaMixer      | [AdaMixer: A Fast-Converging Query-Based Object Detector](https://arxiv.org/abs/2203.16507)                                           | [Code](https://github.com/MCG-NJU/AdaMixer)             |
+| 2021 |  CVPR   |    MaX-DeepLab     | [MaX-DeepLab: End-to-End Panoptic Segmentation with Mask Transformers](https://arxiv.org/abs/2012.00759)                              | [Code](https://github.com/google-research/deeplab2)     |
+| 2021 | NeurIPS |       K-Net        | [K-Net: Towards Unified Image Segmentation](https://arxiv.org/abs/2106.14855)                                                         | [Code](https://github.com/ZwwWayne/K-Net/)              |
+| 2022 |  CVPR   |    Mask2Former     | [Masked-attention Mask Transformer for Universal Image Segmentation](https://arxiv.org/abs/2112.01527)                                | [Code](https://github.com/facebookresearch/Mask2Former) |
+| 2022 |  ECCV   |    kMaX-DeepLab    | [k-means Mask Transformer](https://arxiv.org/abs/2207.04044)                                                                          | [Code](https://github.com/google-research/deeplab2)     |
+| 2021 |  ICCV   |     QueryInst      | [Instances as queries](https://arxiv.org/abs/2105.01928)                                                                              | [Code](https://github.com/hustvl/QueryInst)             |
+| 2021 |  arxiv  |        ISTR        | [ISTR: End-to-End Instance Segmentation via Transformers](https://arxiv.org/abs/2105.00637)                                           | [Code](https://github.com/hujiecpp/ISTR)                |
+| 2021 | NeurIPS |        SOLQ        | [Solq: Segmenting objects by learning queries](https://arxiv.org/abs/2106.02351)                                                      | [Code](https://github.com/megvii-research/SOLQ)         |
+| 2022 |  CVPR   | Panoptic Segformer | [Panoptic SegFormer: Delving Deeper into Panoptic Segmentation with Transformers](https://arxiv.org/abs/2109.03814)                   | [Code](https://github.com/zhiqi-li/Panoptic-SegFormer)  |
+| 2022 |  CVPR   |    CMT-Deeplab     | [CMT-DeepLab: Clustering Mask Transformers for Panoptic Segmentation](https://arxiv.org/abs/2206.08948)                               | N/A                                                     |
+| 2022 |  CVPR   |     SparseInst     | [Sparse Instance Activation for Real-Time Instance Segmentation](https://arxiv.org/abs/2203.12827)                                    | [Code](https://github.com/hustvl/SparseInst)            |
+| 2022 |  CVPR   |      SAM-DETR      | [Accelerating DETR Convergence via Semantic-Aligned Matching](https://arxiv.org/abs/2203.06883)                                       | [Code](https://github.com/ZhangGongjie/SAM-DETR)        |
+| 2021 |  ICCV   |     SMCA-DETR      | [Fast Convergence of DETR with Spatially Modulated Co-Attention](https://arxiv.org/abs/2101.07448)                                    | [Code](https://github.com/gaopengcuhk/SMCA-DETR)        |
+| 2021 |  BMVC   |      ACT-DETR      | [End-to-End Object Detection with Adaptive Clustering Transformer](https://www.bmvc2021-virtualconference.com/assets/papers/0709.pdf) | [Code](https://github.com/gaopengcuhk/SMCA-DETR)        |
+| 2021 |  ICCV   |    Dynamic DETR    | [Dynamic DETR: End-to-End Object Detection with Dynamic Attention](https://ieeexplore.ieee.org/document/9709981)                      | N/A                                                     |
+| 2022 |  ICLR   |    Sparse DETR     | [Sparse DETR: Efficient End-to-End Object Detection with Learnable Sparsity](https://arxiv.org/abs/2111.14330)                        | [Code](https://github.com/kakaobrain/sparse-detr)       |
 
 #### Spatial-Temporal Cross Attention Design
 
-| Year |  Venue  |      Acronym       | Paper Title                                     `   `                                                              | Code/Project                                          |
-|:----:|:-------:|:------------------:|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| 2021 |  CVPR   |       VisTR        | [VisTR: End-to-End Video Instance Segmentation with Transformers](https://arxiv.org/abs/2011.14503)                | [Code](https://github.com/Epiphqny/VisTR)             |
-| 2022 | NeurIPS |        VITA        | [VITA: Video Instance Segmentation via Object Token Association](https://arxiv.org/abs/2206.04403)                 | [Code](https://github.com/sukjunhwang/VITA)           |
-| 2021 | NeurIPS |        IFC         | [Video instance segmentation using inter-frame communication transformers](https://arxiv.org/abs/2106.03299)       | [Code](https://github.com/sukjunhwang/IFC)            |
-| 2022 |  CVPR   | TubeFormer-DeepLab | [TubeFormer-DeepLab: Video Mask Transformer](https://arxiv.org/abs/2205.15361)                                     | N/A                                                   |
-| 2022 |  CVPR   |    Video K-Net     | [Video K-Net: A Simple, Strong, and Unified Baseline for Video Segmentation](https://arxiv.org/abs/2204.04656)     | [Code](https://github.com/lxtGH/Video-K-Net)          |
-| 2022 |  CVPR   |       TeViT        | [Temporally efficient vision transformer for video instance segmentation](https://arxiv.org/abs/2204.08412)        | [Code](https://github.com/hustvl/TeViT)               |
-| 2022 |  ECCV   |     Seqformer      | [SeqFormer: Sequential Transformer for Video Instance Segmentation](https://arxiv.org/abs/2112.08275)              | [Code](https://github.com/wjf5203/SeqFormer)          |
-| 2022 |  arxiv  |  Mask2Former-VIS   | [Mask2Former for Video Instance Segmentation](https://arxiv.org/abs/2112.10764)                                    | [Code](https://github.com/facebookresearch/Mask2Former) |
-| 2022 |  PAMI   |      TransVOD      | [TransVOD: End-to-End Video Object Detection with Spatial-Temporal Transformers](https://arxiv.org/abs/2201.05047) | [Code](https://github.com/SJTU-LuHe/TransVOD)         |
-| 2022 |  CVPR   |      SlotVPS       | [Slot-VPS: Object-centric Representation Learning for Video Panoptic Segmentation](https://arxiv.org/abs/2112.08949)   | N/A                                                   |
-
+| Year |  Venue  |      Acronym       | Paper Title                                     `   `                                                                | Code/Project                                            |
+|:----:|:-------:|:------------------:|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| 2021 |  CVPR   |       VisTR        | [VisTR: End-to-End Video Instance Segmentation with Transformers](https://arxiv.org/abs/2011.14503)                  | [Code](https://github.com/Epiphqny/VisTR)               |
+| 2022 | NeurIPS |        VITA        | [VITA: Video Instance Segmentation via Object Token Association](https://arxiv.org/abs/2206.04403)                   | [Code](https://github.com/sukjunhwang/VITA)             |
+| 2021 | NeurIPS |        IFC         | [Video instance segmentation using inter-frame communication transformers](https://arxiv.org/abs/2106.03299)         | [Code](https://github.com/sukjunhwang/IFC)              |
+| 2022 |  CVPR   | TubeFormer-DeepLab | [TubeFormer-DeepLab: Video Mask Transformer](https://arxiv.org/abs/2205.15361)                                       | N/A                                                     |
+| 2022 |  CVPR   |    Video K-Net     | [Video K-Net: A Simple, Strong, and Unified Baseline for Video Segmentation](https://arxiv.org/abs/2204.04656)       | [Code](https://github.com/lxtGH/Video-K-Net)            |
+| 2022 |  CVPR   |       TeViT        | [Temporally efficient vision transformer for video instance segmentation](https://arxiv.org/abs/2204.08412)          | [Code](https://github.com/hustvl/TeViT)                 |
+| 2022 |  ECCV   |     Seqformer      | [SeqFormer: Sequential Transformer for Video Instance Segmentation](https://arxiv.org/abs/2112.08275)                | [Code](https://github.com/wjf5203/SeqFormer)            |
+| 2022 |  arxiv  |  Mask2Former-VIS   | [Mask2Former for Video Instance Segmentation](https://arxiv.org/abs/2112.10764)                                      | [Code](https://github.com/facebookresearch/Mask2Former) |
+| 2022 |  PAMI   |      TransVOD      | [TransVOD: End-to-End Video Object Detection with Spatial-Temporal Transformers](https://arxiv.org/abs/2201.05047)   | [Code](https://github.com/SJTU-LuHe/TransVOD)           |
+| 2022 |  CVPR   |      SlotVPS       | [Slot-VPS: Object-centric Representation Learning for Video Panoptic Segmentation](https://arxiv.org/abs/2112.08949) | N/A                                                     |
 
 ### Optimizing Object Query
 
-####  Adding Position Information into Query
+#### Adding Position Information into Query
 
-| Year | Venue |       Acronym       | Paper Title                                                                                              | Code/Project                                                 |
-|:----:|:-----:|:-------------------:|----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| 2021 | ICCV  |  Conditional-DETR   | [Conditional DETR for Fast Training Convergence](https://arxiv.org/abs/2108.06152)                       | [Code](https://github.com/Atten4Vis/ConditionalDETR)             |
-| 2022 | arxiv | Conditional-DETR-v2 | [Conditional detr v2:Efficient detection transformer with box queries](https://arxiv.org/abs/2207.08914) | [Code](https://github.com/Atten4Vis/ConditionalDETR)             |
-| 2022 | AAAI  |     Anchor DETR     | [Anchor detr: Query design for transformer-based detector](https://arxiv.org/abs/2109.07107)             | [Code](https://github.com/megvii-model/AnchorDETR)             |
-| 2022 | ICLR  |      DAB-DETR       | [DAB-DETR: Dynamic Anchor Boxes are Better Queries for DETR](https://arxiv.org/abs/2201.12329)           | [Code](https://github.com/SlongLiu/DAB-DETR)             |
-| 2021 |  arxiv |   Efficient DETR   | [Efficient detr: improving end-to-end object  etector with dense prior](https://arxiv.org/abs/2104.01318)                                                                                                  | N/A                                                     |
-
+| Year | Venue |       Acronym       | Paper Title                                                                                               | Code/Project                                         |
+|:----:|:-----:|:-------------------:|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| 2021 | ICCV  |  Conditional-DETR   | [Conditional DETR for Fast Training Convergence](https://arxiv.org/abs/2108.06152)                        | [Code](https://github.com/Atten4Vis/ConditionalDETR) |
+| 2022 | arxiv | Conditional-DETR-v2 | [Conditional detr v2:Efficient detection transformer with box queries](https://arxiv.org/abs/2207.08914)  | [Code](https://github.com/Atten4Vis/ConditionalDETR) |
+| 2022 | AAAI  |     Anchor DETR     | [Anchor detr: Query design for transformer-based detector](https://arxiv.org/abs/2109.07107)              | [Code](https://github.com/megvii-model/AnchorDETR)   |
+| 2022 | ICLR  |      DAB-DETR       | [DAB-DETR: Dynamic Anchor Boxes are Better Queries for DETR](https://arxiv.org/abs/2201.12329)            | [Code](https://github.com/SlongLiu/DAB-DETR)         |
+| 2021 | arxiv |   Efficient DETR    | [Efficient detr: improving end-to-end object  etector with dense prior](https://arxiv.org/abs/2104.01318) | N/A                                                  |
 
 #### Adding Extra Supervision into Query
 
@@ -202,67 +192,62 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 | 2023 |  ICLR   |    DINO    | [DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection](https://arxiv.org/abs/2203.03605)                | [Code](https://github.com/IDEA-Research/DINO)                     |
 | 2023 |  CVPR   | Mp-Former  | [Mp-former: Mask-piloted transformer for image segmentation](https://arxiv.org/abs/2303.07336)                                     | [Code](https://github.com/IDEA-Research/MP-Former)                |
 | 2023 |  CVPR   | Mask-DINO  | [Mask DINO: Towards A Unified Transformer-based Framework for Object Detection and Segmentation](https://arxiv.org/abs/2206.02777) | [Code](https://github.com/IDEACVR/MaskDINO)                       |
-| 2022 | NeurIPS |    N/A     | [Learning equivariant segmentation with instance-unique querying](https://arxiv.org/abs/2210.00911)                                                                | [Code](https://github.com/JamesLiang819/Instance_Unique_Querying) |
+| 2022 | NeurIPS |    N/A     | [Learning equivariant segmentation with instance-unique querying](https://arxiv.org/abs/2210.00911)                                | [Code](https://github.com/JamesLiang819/Instance_Unique_Querying) |
 | 2023 |  CVPR   |   H-DETR   | [DETRs with Hybrid Matching](https://arxiv.org/abs/2207.13080)                                                                     | [Code](https://github.com/HDETR)                                  |
-| 2022 |  arxiv  | Group-DETR | [Group detr: Fast detr training with group-wise one-to-many assignment](https://arxiv.org/abs/2207.13085)                                                          | N/A                                                               |
-| 2022 |  arxiv  |  Co-DETR   | [Detrs with collaborative hybrid assignments training](https://arxiv.org/abs/2211.12860)                                                                           | [Code](https://github.com/Sense-X/Co-DETR)                                                          |
-
-
+| 2022 |  arxiv  | Group-DETR | [Group detr: Fast detr training with group-wise one-to-many assignment](https://arxiv.org/abs/2207.13085)                          | N/A                                                               |
+| 2022 |  arxiv  |  Co-DETR   | [Detrs with collaborative hybrid assignments training](https://arxiv.org/abs/2211.12860)                                           | [Code](https://github.com/Sense-X/Co-DETR)                        |
 
 ### Using Query For Association
 
 #### Query as Instance Association
 
-| Year |  Venue  |   Acronym   | Paper Title                                                                                                              | Code/Project                                                 |
-|:----:|:-------:|:-----------:|--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| 2022 |  CVPR   | TrackFormer | [TrackFormer: Multi-Object Tracking with Transformer](https://arxiv.org/abs/2101.02702)                                  | [Code](https://github.com/timmeinhardt/trackformer)             |
-| 2021 |  arxiv  | TransTrack  | [TransTrack: Multiple Object Tracking with Transformer](https://arxiv.org/abs/2012.15460)                                | [Code](https://github.com/PeizeSun/TransTrack)             |
-| 2022 |  ECCV   |    MOTR     | [MOTR: End-to-End Multiple-Object Tracking with TRansformer](https://arxiv.org/abs/2105.03247)                           | [Code](https://github.com/megvii-research/MOTR)             |
-| 2022 | NeurIPS |   MinVIS    | [MinVIS: A Minimal Video Instance Segmentation Framework without Video-based Training](https://arxiv.org/abs/2208.02245) | [Code](https://github.com/NVlabs/MinVIS)             |
-| 2022 |  ECCV   |    IDOL     | [In defense of online models for video instance segmentation](https://arxiv.org/abs/2207.10661)                          | [Code](https://github.com/wjf5203/VNext)             |
-| 2022 |  CVPR   | Video K-Net | [Video K-Net: A Simple, Strong, and Unified Baseline for Video Segmentation](https://arxiv.org/abs/2204.04656)           | [Code](https://github.com/lxtGH/Video-K-Net)          |
-| 2023 |  arxiv  |  Tube-Link  | [Tube-Link: A Flexible Cross Tube Baseline for Universal Video Segmentation](https://arxiv.org/abs/2303.12782)           | [Code](https://github.com/lxtGH/Tube-Link)             |
-
+| Year |  Venue  |   Acronym   | Paper Title                                                                                                              | Code/Project                                        |
+|:----:|:-------:|:-----------:|--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| 2022 |  CVPR   | TrackFormer | [TrackFormer: Multi-Object Tracking with Transformer](https://arxiv.org/abs/2101.02702)                                  | [Code](https://github.com/timmeinhardt/trackformer) |
+| 2021 |  arxiv  | TransTrack  | [TransTrack: Multiple Object Tracking with Transformer](https://arxiv.org/abs/2012.15460)                                | [Code](https://github.com/PeizeSun/TransTrack)      |
+| 2022 |  ECCV   |    MOTR     | [MOTR: End-to-End Multiple-Object Tracking with TRansformer](https://arxiv.org/abs/2105.03247)                           | [Code](https://github.com/megvii-research/MOTR)     |
+| 2022 | NeurIPS |   MinVIS    | [MinVIS: A Minimal Video Instance Segmentation Framework without Video-based Training](https://arxiv.org/abs/2208.02245) | [Code](https://github.com/NVlabs/MinVIS)            |
+| 2022 |  ECCV   |    IDOL     | [In defense of online models for video instance segmentation](https://arxiv.org/abs/2207.10661)                          | [Code](https://github.com/wjf5203/VNext)            |
+| 2022 |  CVPR   | Video K-Net | [Video K-Net: A Simple, Strong, and Unified Baseline for Video Segmentation](https://arxiv.org/abs/2204.04656)           | [Code](https://github.com/lxtGH/Video-K-Net)        |
+| 2023 |  arxiv  |  Tube-Link  | [Tube-Link: A Flexible Cross Tube Baseline for Universal Video Segmentation](https://arxiv.org/abs/2303.12782)           | [Code](https://github.com/lxtGH/Tube-Link)          |
 
 #### Query as Linking Multi-Tasks
 
-| Year | Venue |        Acronym         | Paper Title                                                                                                                             | Code/Project                                                 |
-|:----:|:-----:|:----------------------:|-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| 2022 | ECCV  |  Panoptic-PartFormer   | [Panoptic-PartFormer: Learning a Unified Model for Panoptic Part Segmentation](https://arxiv.org/abs/2204.04655)                        | [Code](https://github.com/lxtGH/Panoptic-PartFormer)             |
-| 2022 | ECCV  |    PolyphonicFormer    | [PolyphonicFormer: Unified Query Learning for Depth-aware Video Panoptic Segmentation](https://arxiv.org/abs/2112.02582)                | [Code](https://github.com/HarborYuan/PolyphonicFormer)             |
-| 2022 | CVPR  |     PanopticDepth      | [Panopticdepth: A unified framework for depth-aware panoptic segmentation](https://arxiv.org/abs/2206.00468)                            | [Code](https://github.com/NaiyuGao/PanopticDepth)             |
-| 2022 | ECCV  |     Fashionformer      | [Fashionformer: A simple, effective and unified baseline for human fashion segmentation and recognition](https://arxiv.org/abs/2204.04654) | [Code](https://github.com/xushilin1/FashionFormer)             |
-| 2022 | ECCV  |   InvPT                | [InvPT: Inverted Pyramid Multi-task Transformer for Dense Scene Understanding](https://arxiv.org/abs/2203.07997)                        | [Code](https://github.com/prismformore/InvPT)             |
-
+| Year | Venue |       Acronym       | Paper Title                                                                                                                                | Code/Project                                           |
+|:----:|:-----:|:-------------------:|--------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| 2022 | ECCV  | Panoptic-PartFormer | [Panoptic-PartFormer: Learning a Unified Model for Panoptic Part Segmentation](https://arxiv.org/abs/2204.04655)                           | [Code](https://github.com/lxtGH/Panoptic-PartFormer)   |
+| 2022 | ECCV  |  PolyphonicFormer   | [PolyphonicFormer: Unified Query Learning for Depth-aware Video Panoptic Segmentation](https://arxiv.org/abs/2112.02582)                   | [Code](https://github.com/HarborYuan/PolyphonicFormer) |
+| 2022 | CVPR  |    PanopticDepth    | [Panopticdepth: A unified framework for depth-aware panoptic segmentation](https://arxiv.org/abs/2206.00468)                               | [Code](https://github.com/NaiyuGao/PanopticDepth)      |
+| 2022 | ECCV  |    Fashionformer    | [Fashionformer: A simple, effective and unified baseline for human fashion segmentation and recognition](https://arxiv.org/abs/2204.04654) | [Code](https://github.com/xushilin1/FashionFormer)     |
+| 2022 | ECCV  |        InvPT        | [InvPT: Inverted Pyramid Multi-task Transformer for Dense Scene Understanding](https://arxiv.org/abs/2203.07997)                           | [Code](https://github.com/prismformore/InvPT)          |
 
 ### Conditional Query Generation
 
 #### Conditional Query Fusion on Language Features
 
-| Year | Venue |     Acronym      | Paper Title                                                                                                               | Code/Project                                                       |
-|:----:|:-----:|:----------------:|---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| 2021 | ICCV  |       VLT        | [Vision-Language Transformer and Query Generation for Referring Segmentation](https://arxiv.org/abs/2108.05565)           | [Code](https://github.com/henghuiding/Vision-Language-Transformer) |
-| 2022 | CVPR  |       LAVT       | [Lavt: Language-aware vision transformer for referring image segmentation](https://arxiv.org/abs/2112.02244)              | [Code](https://github.com/yz93/LAVT-RIS)                           |
-| 2022 | CVPR  |      Restr       | [Restr:Convolution-free referring image segmentation using transformers](https://arxiv.org/abs/2203.16768)                | N/A                                                                |
-| 2022 | CVPR  |       Cris       | [Cris: Clip-driven referring image segmentation](https://arxiv.org/abs/2111.15174)                                        | [Code](https://github.com/DerrickWang005/CRIS.pytorch)             |
-| 2022 | CVPR  |       MTTR       | [End-to-End Referring Video Object Segmentation with Multimodal Transformers](https://arxiv.org/abs/2111.14821)           | [Code](https://github.com/mttr2021/MTTR)                           |
-| 2022 | CVPR  |       LBDT       | [Language-Bridged Spatial-Temporal Interaction for Referring Video Object Segmentation](https://arxiv.org/abs/2206.03789) | [Code](https://github.com/dzh19990407/LBDT)                        |
-| 2022 | CVPR  |  ReferFormer     | [Language as queries for referring video object segmentation](https://arxiv.org/abs/2201.00487)                           | [Code](https://github.com/wjn922/ReferFormer)                                                           |
-|      |       |                  |                                                                                                                           | [Code]()                                                           |
-
+| Year | Venue |   Acronym   | Paper Title                                                                                                               | Code/Project                                                       |
+|:----:|:-----:|:-----------:|---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| 2021 | ICCV  |     VLT     | [Vision-Language Transformer and Query Generation for Referring Segmentation](https://arxiv.org/abs/2108.05565)           | [Code](https://github.com/henghuiding/Vision-Language-Transformer) |
+| 2022 | CVPR  |    LAVT     | [Lavt: Language-aware vision transformer for referring image segmentation](https://arxiv.org/abs/2112.02244)              | [Code](https://github.com/yz93/LAVT-RIS)                           |
+| 2022 | CVPR  |    Restr    | [Restr:Convolution-free referring image segmentation using transformers](https://arxiv.org/abs/2203.16768)                | N/A                                                                |
+| 2022 | CVPR  |    Cris     | [Cris: Clip-driven referring image segmentation](https://arxiv.org/abs/2111.15174)                                        | [Code](https://github.com/DerrickWang005/CRIS.pytorch)             |
+| 2022 | CVPR  |    MTTR     | [End-to-End Referring Video Object Segmentation with Multimodal Transformers](https://arxiv.org/abs/2111.14821)           | [Code](https://github.com/mttr2021/MTTR)                           |
+| 2022 | CVPR  |    LBDT     | [Language-Bridged Spatial-Temporal Interaction for Referring Video Object Segmentation](https://arxiv.org/abs/2206.03789) | [Code](https://github.com/dzh19990407/LBDT)                        |
+| 2022 | CVPR  | ReferFormer | [Language as queries for referring video object segmentation](https://arxiv.org/abs/2201.00487)                           | [Code](https://github.com/wjn922/ReferFormer)                      |
+|      |       |             |                                                                                                                           | [Code]()                                                           |
 
 #### Conditional Query Fusion on Cross Image Features
 
-| Year |  Venue  |     Acronym     | Paper Title                                                                                                                                                  | Code/Project                                   |
-|:----:|:-------:|:---------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| 2021 | NeurIPS |      CyCTR      | [Few-Shot Segmentation via Cycle-Consistent Transformer](https://arxiv.org/abs/2106.02320)                                                                   | [Code](https://github.com/GengDavid/CyCTR)     |
-| 2022 |  CVPR   |   MatteFormer   | [MatteFormer: Transformer-Based Image Matting via Prior-Tokens](https://arxiv.org/abs/2203.15662)                                                            | [Code](https://github.com/webtoon/matteformer) |
-| 2022 |  ECCV   |   Segdeformer   | [A Transformer-based Decoder for Semantic Segmentation with Multi-level Context Mining](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136880617.pdf) | [Code](https://github.com/lygsbw/segdeformer)  |
-| 2022 |  arxiv  |   StructToken   | [StructToken : Rethinking Semantic Segmentation with Structural Prior](https://arxiv.org/abs/2203.12612)                                                     | N/A                                            |
-| 2022 | NeurIPS |    MM-Former    | [Mask Matching Transformer for Few-Shot Segmentation](https://arxiv.org/abs/2301.01208)                                                                      | [Code](https://github.com/jiaosiyu1999/mmformer)                                       |
-| 2022 |  ECCV   |    AAFormer     | [Adaptive Agent Transformer for Few-shot Segmentation](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136890035.pdf)                               | N/A                                            |
-| 2023 |  arxiv  | ReferecnceTwice | [Reference Twice: A Simple and Unified Baseline for Few-Shot Instance Segmentation](https://arxiv.org/abs/2301.01156)                                        | [Code]()                                                           |
-|      |         |                 |                                                                                                                                                              | [Code]()                                                           |
+| Year |  Venue  |     Acronym     | Paper Title                                                                                                                                                     | Code/Project                                     |
+|:----:|:-------:|:---------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| 2021 | NeurIPS |      CyCTR      | [Few-Shot Segmentation via Cycle-Consistent Transformer](https://arxiv.org/abs/2106.02320)                                                                      | [Code](https://github.com/GengDavid/CyCTR)       |
+| 2022 |  CVPR   |   MatteFormer   | [MatteFormer: Transformer-Based Image Matting via Prior-Tokens](https://arxiv.org/abs/2203.15662)                                                               | [Code](https://github.com/webtoon/matteformer)   |
+| 2022 |  ECCV   |   Segdeformer   | [A Transformer-based Decoder for Semantic Segmentation with Multi-level Context Mining](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136880617.pdf) | [Code](https://github.com/lygsbw/segdeformer)    |
+| 2022 |  arxiv  |   StructToken   | [StructToken : Rethinking Semantic Segmentation with Structural Prior](https://arxiv.org/abs/2203.12612)                                                        | N/A                                              |
+| 2022 | NeurIPS |    MM-Former    | [Mask Matching Transformer for Few-Shot Segmentation](https://arxiv.org/abs/2301.01208)                                                                         | [Code](https://github.com/jiaosiyu1999/mmformer) |
+| 2022 |  ECCV   |    AAFormer     | [Adaptive Agent Transformer for Few-shot Segmentation](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136890035.pdf)                                  | N/A                                              |
+| 2023 |  arxiv  | ReferecnceTwice | [Reference Twice: A Simple and Unified Baseline for Few-Shot Instance Segmentation](https://arxiv.org/abs/2301.01156)                                           | [Code]()                                         |
+|      |         |                 |                                                                                                                                                                 | [Code]()                                         |
 
 ### Tuning Foundation Models
 
@@ -351,13 +336,6 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 | 2022 |  CVPR   |  TopFormer  | [TopFormer: Token Pyramid Transformer for Mobile Semantic Segmentation](https://arxiv.org/abs/2204.05525)                                      | [Code](https://github.com/hustvl/TopFormer)        |
 | 2023 |  ICLR   |  SeaFormer  | [SeaFormer: Squeeze-enhanced Axial Transformer for Mobile Semantic Segmentation](https://arxiv.org/abs/2301.13156)                             | [Code](https://github.com/fudan-zvg/SeaFormer)     |
 
-
-
-
-
-
-
-
 #### Class Agnostic Segmentation and Tracking
 
 | Year |  Venue  |   Acronym   | Paper Title                                                                                                                              | Code/Project                                   |
@@ -382,20 +360,15 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 | 2021 |    MICCAI     | TransFuse | [TransFuse: Fusing Transformers and CNNs for Medical Image Segmentation](https://arxiv.org/abs/2102.08005)      | [Code](https://github.com/Rayicer/TransFuse)                                    |
 | 2022 |     WACV      |   UNETR   | [UNETR: Transformers for 3D Medical Image Segmentation](https://arxiv.org/abs/2103.10504)                       | [Code](https://github.com/Project-MONAI/research-contributions/tree/main/UNETR) |
 
-
-
-
-
-
-
-
 ## Acknowledgement
-If you find our survey and repository useful for your research project , please consider citing our paper:
 
-<pre><code class="language-bib" style="font-size: 0.9rem;" id="citation">@article{xt_seg_survey,
+If you find our survey and repository useful for your research project, please consider citing our paper:
+
+```bibtex
+@article{li2023transformer,
     author={Li, Xiangtai and Ding, Henghui and Zhang, Wenwei and Yuan, Haobo and Cheng, Guangliang and Jiangmiao, Pang and Chen, Kai and Liu, Ziwei and Loy, Chen Change},
     title={Transformer-Based Visual Segmentation: A Survey},
     journal={arXiv pre-print},
     year={2023}
   }
-</code></pre>
+```
