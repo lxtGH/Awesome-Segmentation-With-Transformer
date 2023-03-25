@@ -32,24 +32,52 @@
 | 2023 | CVPR  |   PROB    | [PROB: Probabilistic Objectness for Open World Object Detection](https://arxiv.org/abs/2212.01424)                                         | [Code](https://github.com/orrzohar/PROB)                                                         |
 
 
-
-
-
-
 ### Related Domains and Beyond 
 
 
 #### Point Cloud Segmentation
 
-| Year |  Venue  |      Acronym       | Paper Title                                                                                                    | Code/Project                                                 |
-|:----:|:-------:|:------------------:|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-|  |     |                |                               |           |
+| Year |  Venue  |        Acronym         | Paper Title                                                                                                               | Code/Project                                                     |
+|:----:|:-------:|:----------------------:|---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| 2021 |  ICCV   |   Point Transformer    | [Point Transformer](https://arxiv.org/abs/2012.09164)                                                                     | N/A                                                              |
+| 2021 |   CVM   |          PCT           | [PCT: Point cloud transformer](https://arxiv.org/abs/2012.09688)                                                          | [Code](https://github.com/MenghaoGuo/PCT)                        |
+| 2022 |  CVPR   | Stratified Transformer | [Stratified Transformer for 3D Point Cloud Segmentation](https://arxiv.org/abs/2203.14508)                                | [Code](https://github.com/dvlab-research/Stratified-Transformer) |
+| 2022 |  CVPR   |       Point-BERT       | [Point-BERT: Pre-training 3D Point Cloud Transformers with Masked Point Modeling](https://arxiv.org/abs/2111.14819)       | [Code](https://github.com/lulutang0608/Point-BERT)               |
+| 2022 |  ECCV   |       Point-MAE        | [Masked Autoencoders for Point Cloud Self-supervised Learning](https://arxiv.org/abs/2203.06604)                          | [Code](https://github.com/Pang-Yatian/Point-MAE)                 |
+| 2022 | NeurIPS |       Point-M2AE       | [Point-M2AE: Multi-scale Masked Autoencoders for Hierarchical Point Cloud Pre-training](https://arxiv.org/abs/2205.14401) | [Code](https://github.com/ZrrSkywalker/Point-M2AE)               |
+| 2022 |  ICRA   |         Mask3D         | [Mask3D for 3D Semantic Instance Segmentation](https://arxiv.org/abs/2210.03105)                                          | [Code](https://github.com/JonasSchult/Mask3D)                    |
+| 2023 |  AAAI   |        SPFormer        | [Superpoint Transformer for 3D Scene Instance Segmentation](https://arxiv.org/abs/2211.15766)                             | [Code](https://github.com/sunjiahao1999/SPFormer)                |
+| 2023 |  AAAI   |          PUPS          | [PUPS: Point Cloud Unified Panoptic Segmentation](https://arxiv.org/abs/2302.06185)                                       | N/A                                                              |
+
+
+
+
+
 
 #### Domain-aware Segmentation
 
-| Year |  Venue  |      Acronym       | Paper Title                                                                                                    | Code/Project                                                 |
-|:----:|:-------:|:------------------:|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-|  |     |                |                               |           |
+| Year | Venue  |    Acronym    | Paper Title                                                                                                                                                                                     | Code/Project                                            |
+|:----:|:------:|:-------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| 2022 |  CVPR  |   DAFormer    | [DAFormer: Improving Network Architectures and Training Strategies for Domain-Adaptive Semantic Segmentation](https://arxiv.org/abs/2111.14887)                                                 | [Code](https://github.com/lhoyer/DAFormer)              |
+| 2022 |  ECCV  |     HRDA      | [HRDA: Context-Aware High-Resolution Domain-Adaptive Semantic Segmentation](https://arxiv.org/abs/2204.13132)                                                                                   | [Code](https://github.com/lhoyer/HRDA)                  |
+| 2023 |  CVPR  |      MIC      | [MIC: Masked Image Consistency for Context-Enhanced Domain Adaptation](https://arxiv.org/abs/2212.01322)                                                                                        | [Code](https://github.com/lhoyer/MIC)                   |
+| 2021 | ACM MM |      SFA      | [Exploring Sequence Feature Alignment for Domain Adaptive Detection Transformers](https://arxiv.org/abs/2107.12636)                                                                             | [Code](https://github.com/encounter1997/SFA)            |
+| 2023 |  CVPR  |    DA-DETR    | [DA-DETR: Domain Adaptive Detection Transformer with Information Fusion](https://arxiv.org/abs/2103.17084)                                                                                      | N/A                                                     |
+| 2022 |  ECCV  |    MTTrans    | [MTTrans: Cross-Domain Object Detection with Mean-Teacher Transformer](https://arxiv.org/abs/2205.01643)                                                                                        | [Code](https://github.com/Lafite-Yu/MTTrans-OpenSource) |
+| 2022 | arXiv  | Sentence-Seg  | [The devil is in the labels: Semantic segmentation from sentences](https://arxiv.org/abs/2202.02002)                                                                                            | N/A                                                     |
+| 2023 |  ICLR  |     LMSeg     | [LMSeg: Language-guided Multi-dataset Segmentation](https://arxiv.org/abs/2302.13495)                                                                                                           | N/A                                                     |
+| 2022 |  CVPR  |    UniDet     | [Simple multi-dataset detection](https://arxiv.org/abs/2102.13086)                                                                                                                              | [Code](https://github.com/xingyizhou/UniDet)            |
+| 2023 |  CVPR  | Detection Hub | [Detection Hub: Unifying Object Detection Datasets via Query Adaptation on Language Embedding](https://arxiv.org/abs/2206.03484)                                                                | N/A                                                     |
+| 2022 |  CVPR  |      WD2      | [Unifying Panoptic Segmentation for Autonomous Driving](https://openaccess.thecvf.com/content/CVPR2022/papers/Zendel_Unifying_Panoptic_Segmentation_for_Autonomous_Driving_CVPR_2022_paper.pdf) | [Data](https://github.com/ozendelait/wilddash_scripts)  |
+| 2023 | arXiv  |    TarVIS     | [TarViS: A Unified Approach for Target-based Video Segmentation](https://arxiv.org/abs/2301.02657)                                                                                              | N/A                                                     |
+
+
+
+
+
+
+
+
 
 #### Label and Model Efficient Segmentation
 
