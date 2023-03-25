@@ -67,11 +67,30 @@
 
 #### Label and Model Efficient Segmentation
 
-| Year | Venue |  Acronym  | Paper Title                                                                                                                                    | Code/Project                                   |
-|:----:|:-----:|:---------:|------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| 2022 | CVPR  | MCTformer | [Multi-class Token Transformer for Weakly Supervised Semantic Segmentation](https://arxiv.org/abs/2203.02891)                                  | [Code](https://github.com/xulianuwa/MCTformer) |
-| 2020 | CVPR  |    PCM    | [Self-supervised Equivariant Attention Mechanism for Weakly Supervised Semantic Segmentation](https://arxiv.org/abs/2004.04581)                | [Code](https://github.com/YudeWang/SEAM)       |
-| 2022 | ECCV  |  ViT-PCM  | [Max Pooling with Vision Transformers reconciles class and shape in weakly supervised semantic segmentation](https://arxiv.org/abs/2210.17400) | [Code](https://github.com/deepplants/ViT-PCM)  |
+| Year |  Venue  |   Acronym   | Paper Title                                                                                                                                    | Code/Project                                       |
+|:----:|:-------:|:-----------:|------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| 2022 |  CVPR   |  MCTformer  | [Multi-class Token Transformer for Weakly Supervised Semantic Segmentation](https://arxiv.org/abs/2203.02891)                                  | [Code](https://github.com/xulianuwa/MCTformer)     |
+| 2020 |  CVPR   |     PCM     | [Self-supervised Equivariant Attention Mechanism for Weakly Supervised Semantic Segmentation](https://arxiv.org/abs/2004.04581)                | [Code](https://github.com/YudeWang/SEAM)           |
+| 2022 |  ECCV   |   ViT-PCM   | [Max Pooling with Vision Transformers reconciles class and shape in weakly supervised semantic segmentation](https://arxiv.org/abs/2210.17400) | [Code](https://github.com/deepplants/ViT-PCM)      |
+| 2021 |  ICCV   |    DINO     | [Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.14294)                                                 | [Code](https://github.com/facebookresearch/dino)   |
+| 2021 |  BMVC   |    LOST     | [Localizing Objects with Self-Supervised Transformers and no Labels](https://arxiv.org/abs/2109.14279)                                         | [Code](https://github.com/valeoai/LOST)            |
+| 2022 |  ICLR   |    STEGO    | [Unsupervised Semantic Segmentation by Distilling Feature Correspondences](https://arxiv.org/abs/2203.08414)                                   | [Code](https://github.com/mhamilton723/STEGO)      |
+| 2022 | NeurIPS |    ReCo     | [ReCo: Retrieve and Co-segment for Zero-shot Transfer](https://arxiv.org/abs/2206.07045)                                                       | [Code](https://github.com/NoelShin/reco)           |
+| 2022 |  arXiv  | MaskDistill | [Discovering Object Masks with Transformers for Unsupervised Semantic Segmentation](https://arxiv.org/abs/2206.06363)                          | N/A                                                |
+| 2022 |  CVPR   |  FreeSOLO   | [FreeSOLO: Learning to Segment Objects without Annotations](https://arxiv.org/abs/2202.12181)                                                  | [Code](http://github.com/NVlabs/FreeSOLO)          |
+| 2023 |  CVPR   |   CutLER    | [Cut and Learn for Unsupervised Object Detection and Instance Segmentation](https://arxiv.org/abs/2301.11320)                                  | [Code](https://github.com/facebookresearch/CutLER) |
+| 2022 |  CVPR   |  TokenCut   | [Self-Supervised Transformers for Unsupervised Object Discovery using Normalized Cut](https://arxiv.org/abs/2202.11539)                        | [Code](https://github.com/YangtaoWANG95/TokenCut)  |
+| 2022 |  ICLR   |  MobileViT  | [MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer](https://arxiv.org/abs/2110.02178)                           | [Code](https://github.com/apple/ml-cvnets)         |
+| 2023 |  arXiv  |     EMO     | [Rethinking Mobile Block for Efficient Neural Models](https://arxiv.org/abs/2301.01146)                                                        | [Code](https://github.com/zhangzjn/EMO)            |
+| 2022 |  CVPR   |  TopFormer  | [TopFormer: Token Pyramid Transformer for Mobile Semantic Segmentation](https://arxiv.org/abs/2204.05525)                                      | [Code](https://github.com/hustvl/TopFormer)        |
+| 2023 |  ICLR   |  SeaFormer  | [SeaFormer: Squeeze-enhanced Axial Transformer for Mobile Semantic Segmentation](https://arxiv.org/abs/2301.13156)                             | [Code](https://github.com/fudan-zvg/SeaFormer)     |
+
+
+
+
+
+
+
 
 #### Class Agnostic Segmentation and Tracking
 
