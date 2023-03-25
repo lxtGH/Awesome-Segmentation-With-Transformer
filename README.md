@@ -60,37 +60,12 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 - [Methods: A Survey](#methods-a-survey)
   - [Meta-Architecture](#meta-architecture)
   - [Strong Representation](#Strong-Representation)
-
-[//]: # (    - [Better ViTs Design]&#40;##Better-ViTs-Design&#41;)
-
-[//]: # (    - [Hybrid CNNs/Transformers/MLPs]&#40;##Hybrid CNNs/Transformers/MLPs&#41;)
-
-[//]: # (    - [Self-Supervised Learning]&#40;##Self-Supervised Learning&#41;)
   - [Interaction Design in Decoder](#Interaction-Design-in-Decoder)
-
-[//]: # (    - [Improved Cross Attention Design]&#40;##Improved Cross Attention Design&#41;)
-
-[//]: # (    - [Spatial-Temporal Cross Attention Design]&#40;##Spatial-Temporal Cross Attention Design&#41;)
   - [Optimizing Object Query](#Optimizing-Object-Query)
-
-[//]: # (    - [Adding Position Information into Query]&#40;##Adding Position Information into Query&#41;)
-
-[//]: # (    - [Adding Extra Supervision into Query]&#40;##Adding Extra Supervision into Query&#41;)
   - [Using Query For Association](#Using-Query-For-Association)
-
-[//]: # (    - [Query as Instance Association]&#40;##Query as Instance Association&#41;)
-
-[//]: # (    - [Query as Linking Multi-Tasks]&#40;##Query as Linking Multi-Tasks&#41;)
   - [Conditional Query Generation](#Conditional-Query-Generation)
-
-[//]: # (    - [Conditional Query Fusion on Language Features]&#40;##Conditional Query Fusion on Language Features&#41;)
-
-[//]: # (    - [Conditional Query Fusion on Cross Image Features]&#40;##Conditional Query Fusion on Cross Image Features&#41;)
   - [Tuning Foundation Models](#Tuning-Foundation-Models)
 
-[//]: # (    - [Vision Adapter]&#40;##Vision Adapter&#41;)
-
-[//]: # (    - [Open Vocabulary Learning]&#40;##Open Vocabulary Learning&#41;)
 
 [//]: # (  )
 - [Related Domains and Beyond](#Related-Domains-and-Beyond)
