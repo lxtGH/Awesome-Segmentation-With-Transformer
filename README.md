@@ -1,7 +1,6 @@
  <!-- # <p align=center>`awesome gan-inversion`</p> -->
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/lxtGH/Trans_Seg_Survey/issues)
-![visitors](https://visitor-badge.glitch.me/badge?style=flat-square&page_id=lxtGH/Trans_Seg_Survey)
 <br />
 <p align="center">
   <h1 align="center">Transformer-Based Visual Segmentation: A Survey</h1>
