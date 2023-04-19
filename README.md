@@ -11,7 +11,7 @@
     ·
     <a href="https://henghuiding.github.io/"><strong>Henghui Ding</strong></a>
     ·
-    <a href="https://zhangwenwei.cn/"><strong>Wenwei Zhang</strong></a>
+    <a href="http://zhangwenwei.cn/"><strong>Wenwei Zhang</strong></a>
     ·
     <a href="https://yuanhaobo.me/"><strong>Haobo Yuan</strong></a>
     ·
@@ -42,10 +42,10 @@ If you find any work missing or have any suggestions (papers, implementations an
 to [pull requests](https://github.com).
 We will add the missing papers in this repo ASAP.
 
-### Highlight!!
+### 🔥Highlight!!
 
 Previous Transformer surveys divide the methods by the different tasks and settings.
-Different from these, we re-visit and group the existing transformer-based methods from the **technical perspective.**
+Different from them, we re-visit and group the existing transformer-based methods from the **technical perspective.**
 
 ## Introduction
 
