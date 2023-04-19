@@ -1,6 +1,6 @@
  <!-- # <p align=center>`awesome gan-inversion`</p> -->
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/lxtGH/Trans_Seg_Survey/issues)
+[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/lxtGH/Awesome-Segmenation-With-Transformer/pulls)
 <br />
 <p align="center">
   <h1 align="center">Transformer-Based Visual Segmentation: A Survey</h1>
@@ -30,7 +30,7 @@
     <a href=''>
       <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='arXiv PDF'>
     </a>
-    <a href='' style='padding-left: 0.5rem;'>
+    <a href='https://www.mmlab-ntu.com/project/seg_survey/index.html' style='padding-left: 0.5rem;'>
       <img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='S-Lab Project Page'>
     </a>
   </p>
@@ -39,7 +39,7 @@
 This repo is used for recording, tracking and benchmarking several recent transformer-based visual segmentation methods,
 as a supplement for our [survey]().  
 If you find any work missing or have any suggestions (papers, implementations and other resources), feel free
-to [pull requests](https://github.com).
+to [pull requests](https://github.com/lxtGH/Awesome-Segmenation-With-Transformer/pulls).
 We will add the missing papers in this repo ASAP.
 
 ### 🔥Highlight!!
