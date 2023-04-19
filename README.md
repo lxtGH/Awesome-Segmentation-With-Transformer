@@ -51,7 +51,7 @@ Different from them, we re-visit and group the existing transformer-based method
 
 In this survey, we present the first detailed survey on Transformer-Based Segmentation.
 
-![Alt Text](./figs/survey_pipeline.png)
+![Alt Text](./figs/survey_pipeline.jpg)
 
 ## Summary of Contents
 
