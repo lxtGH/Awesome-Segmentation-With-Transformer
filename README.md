@@ -5,7 +5,7 @@
 <p align="center">
   <h1 align="center">Transformer-Based Visual Segmentation: A Survey</h1>
   <p align="center">
-    Arxiv, 2023
+    arXiv, 2023
     <br />
     <a href="https://lxtgh.github.io/"><strong>Xiangtai Li</strong></a>
     ·
@@ -62,12 +62,12 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
     - [Optimizing Object Query](#Optimizing-Object-Query)
     - [Using Query For Association](#Using-Query-For-Association)
     - [Conditional Query Generation](#Conditional-Query-Generation)
-    - [Tuning Foundation Models](#Tuning-Foundation-Models)
 
 [//]: # (  )
 
 - [Related Domains and Beyond](#Related-Domains-and-Beyond)
     - [Point Cloud Segmentation](#Point-Cloud-Segmentation)
+    - [Tuning Foundation Models](#Tuning-Foundation-Models)
     - [Domain-aware Segmentation](#Domain-aware-Segmentation)
     - [Label and Model Efficient Segmentation](#Label-and-Model-Efficient-Segmentation)
     - [Class Agnostic Segmentation and Tracking](#Class-Agnostic-Segmentation-and-Tracking)
