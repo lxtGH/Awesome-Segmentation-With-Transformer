@@ -129,7 +129,7 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 | 2022 |  CVPR   |     MAE     | [Masked Autoencoders Are Scalable Vision Learners](https://arxiv.org/abs/2111.06377)                                       | [Code](https://github.com/facebookresearch/mae)             |
 | 2022 | NeurIPS |   ConvMAE   | [MCMAE: Masked Convolution Meets Masked Autoencoders](https://arxiv.org/abs/2303.05475)                                    | [Code](https://github.com/Alpha-VL/ConvMAE)                 |
 | 2023 |  ICLR   |    Spark    | [SparK: the first successful BERT/MAE-style pretraining on any convolutional networks](https://github.com/keyu-tian/SparK) | [Code](https://github.com/keyu-tian/SparK)                  |
-| 2022 |  arxiv  |    FLIP     | [Scaling Language-Image Pre-training via Masking](https://arxiv.org/abs/2212.00794)                                        | N/A                                                         |
+| 2022 |  CVPR   |    FLIP     | [Scaling Language-Image Pre-training via Masking](https://arxiv.org/abs/2212.00794)                                        | [Code](https://github.com/facebookresearch/flip)            |
 | 2023 |  arxiv  | ConvNeXt V2 | [ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders](http://arxiv.org/abs/2301.00808)                 | [Code](https://github.com/facebookresearch/ConvNeXt-V2)     |
 
 ### Interaction Design in Decoder
@@ -155,21 +155,25 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 | 2021 |  BMVC   |      ACT-DETR      | [End-to-End Object Detection with Adaptive Clustering Transformer](https://www.bmvc2021-virtualconference.com/assets/papers/0709.pdf) | [Code](https://github.com/gaopengcuhk/SMCA-DETR)        |
 | 2021 |  ICCV   |    Dynamic DETR    | [Dynamic DETR: End-to-End Object Detection with Dynamic Attention](https://ieeexplore.ieee.org/document/9709981)                      | N/A                                                     |
 | 2022 |  ICLR   |    Sparse DETR     | [Sparse DETR: Efficient End-to-End Object Detection with Learnable Sparsity](https://arxiv.org/abs/2111.14330)                        | [Code](https://github.com/kakaobrain/sparse-detr)       |
+| 2023 |  CVPR   |      FastInst      | [FastInst: A Simple Query-Based Model for Real-Time Instance Segmentation](https://arxiv.org/abs/2303.08594)                          | [Code](https://github.com/junjiehe96/FastInst)          |
+
 
 #### Spatial-Temporal Cross Attention Design
 
-| Year |  Venue  |      Acronym       | Paper Title                                     `   `                                                                | Code/Project                                            |
+| Year |  Venue  |      Acronym       | Paper Title                                                                                                          | Code/Project                                            |
 |:----:|:-------:|:------------------:|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | 2021 |  CVPR   |       VisTR        | [VisTR: End-to-End Video Instance Segmentation with Transformers](https://arxiv.org/abs/2011.14503)                  | [Code](https://github.com/Epiphqny/VisTR)               |
-| 2022 | NeurIPS |        VITA        | [VITA: Video Instance Segmentation via Object Token Association](https://arxiv.org/abs/2206.04403)                   | [Code](https://github.com/sukjunhwang/VITA)             |
 | 2021 | NeurIPS |        IFC         | [Video instance segmentation using inter-frame communication transformers](https://arxiv.org/abs/2106.03299)         | [Code](https://github.com/sukjunhwang/IFC)              |
+| 2022 |  CVPR   |      SlotVPS       | [Slot-VPS: Object-centric Representation Learning for Video Panoptic Segmentation](https://arxiv.org/abs/2112.08949) | N/A                                                     |
 | 2022 |  CVPR   | TubeFormer-DeepLab | [TubeFormer-DeepLab: Video Mask Transformer](https://arxiv.org/abs/2205.15361)                                       | N/A                                                     |
 | 2022 |  CVPR   |    Video K-Net     | [Video K-Net: A Simple, Strong, and Unified Baseline for Video Segmentation](https://arxiv.org/abs/2204.04656)       | [Code](https://github.com/lxtGH/Video-K-Net)            |
 | 2022 |  CVPR   |       TeViT        | [Temporally efficient vision transformer for video instance segmentation](https://arxiv.org/abs/2204.08412)          | [Code](https://github.com/hustvl/TeViT)                 |
 | 2022 |  ECCV   |     Seqformer      | [SeqFormer: Sequential Transformer for Video Instance Segmentation](https://arxiv.org/abs/2112.08275)                | [Code](https://github.com/wjf5203/SeqFormer)            |
 | 2022 |  arxiv  |  Mask2Former-VIS   | [Mask2Former for Video Instance Segmentation](https://arxiv.org/abs/2112.10764)                                      | [Code](https://github.com/facebookresearch/Mask2Former) |
 | 2022 |  PAMI   |      TransVOD      | [TransVOD: End-to-End Video Object Detection with Spatial-Temporal Transformers](https://arxiv.org/abs/2201.05047)   | [Code](https://github.com/SJTU-LuHe/TransVOD)           |
-| 2022 |  CVPR   |      SlotVPS       | [Slot-VPS: Object-centric Representation Learning for Video Panoptic Segmentation](https://arxiv.org/abs/2112.08949) | N/A                                                     |
+| 2022 | NeurIPS |        VITA        | [VITA: Video Instance Segmentation via Object Token Association](https://arxiv.org/abs/2206.04403)                   | [Code](https://github.com/sukjunhwang/VITA)             |
+
+
 
 ### Optimizing Object Query
 
@@ -187,6 +191,7 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 
 | Year |  Venue  |  Acronym   | Paper Title                                                                                                                        | Code/Project                                                      |
 |:----:|:-------:|:----------:|------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| 2022 |  ECCV   |  DE-DETR   | [Towards Data-Efficient Detection Transformers](https://arxiv.org/abs/2203.09507)                                                  | [Code](https://github.com/encounter1997/DE-DETRs)                 |
 | 2022 |  CVPR   |  DN-DETR   | [Dndetr:Accelerate detr training by introducing query denoising](https://arxiv.org/abs/2203.01305)                                 | [Code](https://github.com/IDEA-opensource/DN-DETR)                |
 | 2023 |  ICLR   |    DINO    | [DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection](https://arxiv.org/abs/2203.03605)                | [Code](https://github.com/IDEA-Research/DINO)                     |
 | 2023 |  CVPR   | Mp-Former  | [Mp-former: Mask-piloted transformer for image segmentation](https://arxiv.org/abs/2303.07336)                                     | [Code](https://github.com/IDEA-Research/MP-Former)                |
@@ -200,15 +205,18 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 
 #### Query as Instance Association
 
-| Year |  Venue  |   Acronym   | Paper Title                                                                                                              | Code/Project                                        |
-|:----:|:-------:|:-----------:|--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| 2022 |  CVPR   | TrackFormer | [TrackFormer: Multi-Object Tracking with Transformer](https://arxiv.org/abs/2101.02702)                                  | [Code](https://github.com/timmeinhardt/trackformer) |
-| 2021 |  arxiv  | TransTrack  | [TransTrack: Multiple Object Tracking with Transformer](https://arxiv.org/abs/2012.15460)                                | [Code](https://github.com/PeizeSun/TransTrack)      |
-| 2022 |  ECCV   |    MOTR     | [MOTR: End-to-End Multiple-Object Tracking with TRansformer](https://arxiv.org/abs/2105.03247)                           | [Code](https://github.com/megvii-research/MOTR)     |
-| 2022 | NeurIPS |   MinVIS    | [MinVIS: A Minimal Video Instance Segmentation Framework without Video-based Training](https://arxiv.org/abs/2208.02245) | [Code](https://github.com/NVlabs/MinVIS)            |
-| 2022 |  ECCV   |    IDOL     | [In defense of online models for video instance segmentation](https://arxiv.org/abs/2207.10661)                          | [Code](https://github.com/wjf5203/VNext)            |
-| 2022 |  CVPR   | Video K-Net | [Video K-Net: A Simple, Strong, and Unified Baseline for Video Segmentation](https://arxiv.org/abs/2204.04656)           | [Code](https://github.com/lxtGH/Video-K-Net)        |
-| 2023 |  arxiv  |  Tube-Link  | [Tube-Link: A Flexible Cross Tube Baseline for Universal Video Segmentation](https://arxiv.org/abs/2303.12782)           | [Code](https://github.com/lxtGH/Tube-Link)          |
+| Year |  Venue  |   Acronym   | Paper Title                                                                                                                      | Code/Project                                        |
+|:----:|:-------:|:-----------:|----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| 2022 |  CVPR   | TrackFormer | [TrackFormer: Multi-Object Tracking with Transformer](https://arxiv.org/abs/2101.02702)                                          | [Code](https://github.com/timmeinhardt/trackformer) |
+| 2021 |  arxiv  | TransTrack  | [TransTrack: Multiple Object Tracking with Transformer](https://arxiv.org/abs/2012.15460)                                        | [Code](https://github.com/PeizeSun/TransTrack)      |
+| 2022 |  ECCV   |    MOTR     | [MOTR: End-to-End Multiple-Object Tracking with TRansformer](https://arxiv.org/abs/2105.03247)                                   | [Code](https://github.com/megvii-research/MOTR)     |
+| 2022 | NeurIPS |   MinVIS    | [MinVIS: A Minimal Video Instance Segmentation Framework without Video-based Training](https://arxiv.org/abs/2208.02245)         | [Code](https://github.com/NVlabs/MinVIS)            |
+| 2022 |  ECCV   |    IDOL     | [In defense of online models for video instance segmentation](https://arxiv.org/abs/2207.10661)                                  | [Code](https://github.com/wjf5203/VNext)            |
+| 2022 |  CVPR   | Video K-Net | [Video K-Net: A Simple, Strong, and Unified Baseline for Video Segmentation](https://arxiv.org/abs/2204.04656)                   | [Code](https://github.com/lxtGH/Video-K-Net)        |
+| 2023 |  CVPR   |   GenVIS    | [A Generalized Framework for Video Instance Segmentation](https://arxiv.org/abs/2211.08834)                                      | [Code](https://github.com/miranheo/GenVIS)          |
+| 2023 |  arXiv  |  Tube-Link  | [Tube-Link: A Flexible Cross Tube Baseline for Universal Video Segmentation](https://arxiv.org/abs/2303.12782)                   | [Code](https://github.com/lxtGH/Tube-Link)          |
+| 2023 |  arXiv  | Video-kMaX  | [Video-kMaX: A Simple Unified Approach for Online and Near-Online Video Panoptic Segmentation](https://arxiv.org/abs/2304.04694) | N/A                                                 |
+
 
 #### Query as Linking Multi-Tasks
 
@@ -233,7 +241,6 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 | 2022 | CVPR  |    MTTR     | [End-to-End Referring Video Object Segmentation with Multimodal Transformers](https://arxiv.org/abs/2111.14821)           | [Code](https://github.com/mttr2021/MTTR)                           |
 | 2022 | CVPR  |    LBDT     | [Language-Bridged Spatial-Temporal Interaction for Referring Video Object Segmentation](https://arxiv.org/abs/2206.03789) | [Code](https://github.com/dzh19990407/LBDT)                        |
 | 2022 | CVPR  | ReferFormer | [Language as queries for referring video object segmentation](https://arxiv.org/abs/2201.00487)                           | [Code](https://github.com/wjn922/ReferFormer)                      |
-|      |       |             |                                                                                                                           | [Code]()                                                           |
 
 #### Conditional Query Fusion on Cross Image Features
 
@@ -245,8 +252,7 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 | 2022 |  arxiv  |   StructToken   | [StructToken : Rethinking Semantic Segmentation with Structural Prior](https://arxiv.org/abs/2203.12612)                                                        | N/A                                              |
 | 2022 | NeurIPS |    MM-Former    | [Mask Matching Transformer for Few-Shot Segmentation](https://arxiv.org/abs/2301.01208)                                                                         | [Code](https://github.com/jiaosiyu1999/mmformer) |
 | 2022 |  ECCV   |    AAFormer     | [Adaptive Agent Transformer for Few-shot Segmentation](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136890035.pdf)                                  | N/A                                              |
-| 2023 |  arxiv  | ReferecnceTwice | [Reference Twice: A Simple and Unified Baseline for Few-Shot Instance Segmentation](https://arxiv.org/abs/2301.01156)                                           | [Code]()                                         |
-|      |         |                 |                                                                                                                                                                 | [Code]()                                         |
+| 2023 |  arxiv  | ReferecnceTwice | [Reference Twice: A Simple and Unified Baseline for Few-Shot Instance Segmentation](https://arxiv.org/abs/2301.01156)                                           | [Code](https://github.com/hanyue1648/RefT)       |
 
 ### Tuning Foundation Models
 
@@ -373,6 +379,9 @@ If you find our survey and repository useful for your research project, please c
 ```
 ## Contact
 ```
-  xiangtai.li@ntu.edu.sg or lxtpku@pku.edu.cn
+xiangtai.li@ntu.edu.sg 
+```
+```
+lxtpku@pku.edu.cn
 ```
 
