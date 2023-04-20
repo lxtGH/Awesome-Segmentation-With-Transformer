@@ -27,7 +27,7 @@
   </p>
 
   <p align="center">
-    <a href=''>
+    <a href='https://arxiv.org/abs/2304.09854'>
       <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='arXiv PDF'>
     </a>
     <a href='https://www.mmlab-ntu.com/project/seg_survey/index.html' style='padding-left: 0.5rem;'>
@@ -37,7 +37,7 @@
 <br />
 
 This repo is used for recording, tracking and benchmarking several recent transformer-based visual segmentation methods,
-as a supplement for our [survey]().  
+as a supplement for our [survey](https://arxiv.org/abs/2304.09854).  
 If you find any work missing or have any suggestions (papers, implementations and other resources), feel free
 to [pull requests](https://github.com/lxtGH/Awesome-Segmenation-With-Transformer/pulls).
 We will add the missing papers in this repo ASAP.
