@@ -44,8 +44,15 @@ We will add the missing papers in this repo ASAP.
 
 ### 🔥Highlight!!
 
-Previous Transformer surveys divide the methods by the different tasks and settings.
+[1], Previous transformer surveys divide the methods by the different tasks and settings.
 Different from them, we re-visit and group the existing transformer-based methods from the **technical perspective.**
+
+[2], We survey the methods in two parts: one for the main stream tasks based on DETR-like meta-architecture, the other for related directions according to the tasks.
+
+[3], We further re-benchmark several representative works on image semantic segmentation and panoptic segmentation datasets. 
+
+[4], We also include the query-based detection transformers since both segmentation and detection tasks are unified by object query. 
+
 
 ## Introduction
 
@@ -384,4 +391,10 @@ xiangtai.li@ntu.edu.sg
 ```
 lxtpku@pku.edu.cn
 ```
+## Related Repo For Segmentation and Detection
+
+Attention Model [Repo](https://github.com/cmhungsteve/Awesome-Transformer-Attention) by Min-Hung (Steve) Chen.
+
+Detection Trasnformer [Repo](https://github.com/IDEA-Research/awesome-detection-transformer) by IDEA.
+
 
