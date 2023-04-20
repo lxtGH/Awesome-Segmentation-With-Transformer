@@ -234,6 +234,7 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 | 2022 | CVPR  |    PanopticDepth    | [Panopticdepth: A unified framework for depth-aware panoptic segmentation](https://arxiv.org/abs/2206.00468)                               | [Code](https://github.com/NaiyuGao/PanopticDepth)      |
 | 2022 | ECCV  |    Fashionformer    | [Fashionformer: A simple, effective and unified baseline for human fashion segmentation and recognition](https://arxiv.org/abs/2204.04654) | [Code](https://github.com/xushilin1/FashionFormer)     |
 | 2022 | ECCV  |        InvPT        | [InvPT: Inverted Pyramid Multi-task Transformer for Dense Scene Understanding](https://arxiv.org/abs/2203.07997)                           | [Code](https://github.com/prismformore/InvPT)          |
+| 2023 | CVPR  |        UNINEXT        | [Universal Instance Perception as Object Discovery and Retrieval](https://arxiv.org/abs/2303.06674)                           | [Code](https://github.com/MasterBin-IIAU/UNINEXT)          |
 
 ### Conditional Query Generation
 
