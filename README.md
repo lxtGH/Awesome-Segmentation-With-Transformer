@@ -259,7 +259,7 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 | 2022 |  arxiv  |   StructToken   | [StructToken : Rethinking Semantic Segmentation with Structural Prior](https://arxiv.org/abs/2203.12612)                                                        | N/A                                              |
 | 2022 | NeurIPS |    MM-Former    | [Mask Matching Transformer for Few-Shot Segmentation](https://arxiv.org/abs/2301.01208)                                                                         | [Code](https://github.com/jiaosiyu1999/mmformer) |
 | 2022 |  ECCV   |    AAFormer     | [Adaptive Agent Transformer for Few-shot Segmentation](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136890035.pdf)                                  | N/A                                              |
-| 2023 |  arxiv  | ReferecnceTwice | [Reference Twice: A Simple and Unified Baseline for Few-Shot Instance Segmentation](https://arxiv.org/abs/2301.01156)                                           | [Code](https://github.com/hanyue1648/RefT)       |
+| 2023 |  arxiv  | ReferenceTwice | [Reference Twice: A Simple and Unified Baseline for Few-Shot Instance Segmentation](https://arxiv.org/abs/2301.01156)                                           | [Code](https://github.com/hanyue1648/RefT)       |
 
 ### Tuning Foundation Models
 
