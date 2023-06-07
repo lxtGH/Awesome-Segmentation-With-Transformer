@@ -368,6 +368,7 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 
 | Year |     Venue     |  Acronym  | Paper Title                                                                                                     | Code/Project                                                                    |
 |:----:|:-------------:|:---------:|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| 2020 |     BIBM     | CellDETR | [Attention-Based Transformers for Instance Segmentation of Cells in Microstructures](https://arxiv.org/abs/2011.09763) | [Code](https://github.com/ChristophReich1996/Cell-DETR)                                  |
 | 2021 |     arXiv     | TransUNet | [TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation](https://arxiv.org/abs/2102.04306) | [Code](https://github.com/Beckschen/TransUNet)                                  |
 | 2022 | ECCV Workshop | Swin-Unet | [Swin-Unet: Unet-like Pure Transformer for Medical Image Segmentation](https://arxiv.org/abs/2105.05537)        | [Code](https://github.com/HuCaoFighting/Swin-Unet)                              |
 | 2021 |    MICCAI     | TransFuse | [TransFuse: Fusing Transformers and CNNs for Medical Image Segmentation](https://arxiv.org/abs/2102.08005)      | [Code](https://github.com/Rayicer/TransFuse)                                    |
