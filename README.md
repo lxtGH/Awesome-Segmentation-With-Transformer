@@ -36,18 +36,23 @@
   </p>
 <br />
 
-This repo is used for recording, tracking and benchmarking several recent transformer-based visual segmentation methods,
-as a supplement for our [survey](https://arxiv.org/abs/2304.09854).  
+This repo is used for recording, tracking, and benchmarking several recent transformer-based visual segmentation methods,
+as a supplement to our [survey](https://arxiv.org/abs/2304.09854).  
 If you find any work missing or have any suggestions (papers, implementations and other resources), feel free
 to [pull requests](https://github.com/lxtGH/Awesome-Segmenation-With-Transformer/pulls).
-We will add the missing papers in this repo ASAP.
+We will add the missing papers to this repo ASAP.
+
+
+### 🔥News
+[-] The second draft is on arxiv. 
+
 
 ### 🔥Highlight!!
 
 [1], Previous transformer surveys divide the methods by the different tasks and settings.
 Different from them, we re-visit and group the existing transformer-based methods from the **technical perspective.**
 
-[2], We survey the methods in two parts: one for the main stream tasks based on DETR-like meta-architecture, the other for related directions according to the tasks.
+[2], We survey the methods in two parts: one for the mainstream tasks based on DETR-like meta-architecture, the other for related directions according to the tasks.
 
 [3], We further re-benchmark several representative works on image semantic segmentation and panoptic segmentation datasets. 
 
@@ -399,4 +404,5 @@ Attention Model [Repo](https://github.com/cmhungsteve/Awesome-Transformer-Attent
 
 Detection Trasnformer [Repo](https://github.com/IDEA-Research/awesome-detection-transformer) by IDEA.
 
+Open Vocabulary Learning [Repo](https://github.com/jianzongwu/Awesome-Open-Vocabulary) by PKU and NTU. 
 
