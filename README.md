@@ -210,8 +210,8 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 | 2023 |  CVPR   | Mask-DINO  | [Mask DINO: Towards A Unified Transformer-based Framework for Object Detection and Segmentation](https://arxiv.org/abs/2206.02777) | [Code](https://github.com/IDEACVR/MaskDINO)                       |
 | 2022 | NeurIPS |    N/A     | [Learning equivariant segmentation with instance-unique querying](https://arxiv.org/abs/2210.00911)                                | [Code](https://github.com/JamesLiang819/Instance_Unique_Querying) |
 | 2023 |  CVPR   |   H-DETR   | [DETRs with Hybrid Matching](https://arxiv.org/abs/2207.13080)                                                                     | [Code](https://github.com/HDETR)                                  |
-| 2022 |  arxiv  | Group-DETR | [Group detr: Fast detr training with group-wise one-to-many assignment](https://arxiv.org/abs/2207.13085)                          | N/A                                                               |
-| 2022 |  arxiv  |  Co-DETR   | [Detrs with collaborative hybrid assignments training](https://arxiv.org/abs/2211.12860)                                           | [Code](https://github.com/Sense-X/Co-DETR)                        |
+| 2023 |  ICCV  | Group-DETR | [Group detr: Fast detr training with group-wise one-to-many assignment](https://arxiv.org/abs/2207.13085)                          | N/A                                                               |
+| 2023 |  ICCV  |  Co-DETR   | [Detrs with collaborative hybrid assignments training](https://arxiv.org/abs/2211.12860)                                           | [Code](https://github.com/Sense-X/Co-DETR)                        |
 
 ### Using Query For Association
 
@@ -226,8 +226,10 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 | 2022 |  ECCV   |    IDOL     | [In defense of online models for video instance segmentation](https://arxiv.org/abs/2207.10661)                                  | [Code](https://github.com/wjf5203/VNext)            |
 | 2022 |  CVPR   | Video K-Net | [Video K-Net: A Simple, Strong, and Unified Baseline for Video Segmentation](https://arxiv.org/abs/2204.04656)                   | [Code](https://github.com/lxtGH/Video-K-Net)        |
 | 2023 |  CVPR   |   GenVIS    | [A Generalized Framework for Video Instance Segmentation](https://arxiv.org/abs/2211.08834)                                      | [Code](https://github.com/miranheo/GenVIS)          |
-| 2023 |  arXiv  |  Tube-Link  | [Tube-Link: A Flexible Cross Tube Baseline for Universal Video Segmentation](https://arxiv.org/abs/2303.12782)                   | [Code](https://github.com/lxtGH/Tube-Link)          |
-| 2023 |  arXiv  | Video-kMaX  | [Video-kMaX: A Simple Unified Approach for Online and Near-Online Video Panoptic Segmentation](https://arxiv.org/abs/2304.04694) | N/A                                                 |
+| 2023 |  ICCV  |  Tube-Link  | [Tube-Link: A Flexible Cross Tube Framework for Universal Video Segmentation](https://arxiv.org/abs/2303.12782)                   | [Code](https://github.com/lxtGH/Tube-Link)          |
+| 2023 |  ICCV  |  CTVIS  | [CTVIS: Consistent Training for Online Video Instance Segmentation](https://arxiv.org/abs/2303.12782)                   | [Code](https://github.com/KainingYing/CTVIS)          |
+| 2023 |  CVPR-W  | Video-kMaX  | [Video-kMaX: A Simple Unified Approach for Online and Near-Online Video Panoptic Segmentation](https://arxiv.org/abs/2304.04694) | N/A                                                 |
+
 
 
 #### Query as Linking Multi-Tasks
@@ -402,7 +404,7 @@ lxtpku@pku.edu.cn
 
 Attention Model [Repo](https://github.com/cmhungsteve/Awesome-Transformer-Attention) by Min-Hung (Steve) Chen.
 
-Detection Trasnformer [Repo](https://github.com/IDEA-Research/awesome-detection-transformer) by IDEA.
+Detection Transformer [Repo](https://github.com/IDEA-Research/awesome-detection-transformer) by IDEA.
 
 Open Vocabulary Learning [Repo](https://github.com/jianzongwu/Awesome-Open-Vocabulary) by PKU and NTU. 
 
