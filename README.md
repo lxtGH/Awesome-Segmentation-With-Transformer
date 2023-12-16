@@ -395,6 +395,9 @@ If you find our survey and repository useful for your research project, please c
 ```
 ## Contact
 ```
+xiangtai94@gmail.com
+```
+```
 xiangtai.li@ntu.edu.sg 
 ```
 ```
