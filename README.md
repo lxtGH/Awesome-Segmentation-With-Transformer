@@ -44,8 +44,9 @@ We will add the missing papers to this repo ASAP.
 
 
 ### 🔥News
-[-] The third version is on arxiv. [survey](https://arxiv.org/abs/2304.09854) More benchmark and methods are included!!
-[-] The second draft is on arxiv. 
+[-] Add several CVPR-24 works on this directions. 2024-03
+[-] The third version is on arxiv. [survey](https://arxiv.org/abs/2304.09854) More benchmark and methods are included!!. 2023-12
+[-] The second draft is on arxiv. 2023-06
 
 
 ### 🔥Highlight!!
@@ -130,7 +131,7 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 | 2022 |  CVPR   |  ConvNext  | [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)                                                                        | [Code](https://github.com/facebookresearch/ConvNeXt)           |
 | 2022 | NeurIPS |  SegNext   | [SegNeXt:Rethinking Convolutional Attention Design for Semantic Segmentation](https://github.com/visual-attention-network/segnext) | [Code](https://github.com/visual-attention-network/segnext)    |
 | 2022 |  CVPR   | PoolFormer | [PoolFormer: MetaFormer Is Actually What You Need for Vision](https://arxiv.org/abs/2111.11418)                                    | [Code](https://github.com/sail-sg/poolformer)                  |
-| 2022 |  arxiv  |    STM     | [Demystify Transformers & Convolutions in Modern Image Deep Networks](https://arxiv.org/abs/2211.05781)                            | [Code](https://github.com/OpenGVLab/STM-Evaluation)            |
+| 2023 |  ICLR   |    STM     | [Demystify Transformers & Convolutions in Modern Image Deep Networks](https://arxiv.org/abs/2211.05781)                            | [Code](https://github.com/OpenGVLab/STM-Evaluation)            |
 
 #### Self-Supervised Learning
 
@@ -192,13 +193,13 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 
 #### Adding Position Information into Query
 
-| Year | Venue |       Acronym       | Paper Title                                                                                               | Code/Project                                         |
-|:----:|:-----:|:-------------------:|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| 2021 | ICCV  |  Conditional-DETR   | [Conditional DETR for Fast Training Convergence](https://arxiv.org/abs/2108.06152)                        | [Code](https://github.com/Atten4Vis/ConditionalDETR) |
-| 2022 | arxiv | Conditional-DETR-v2 | [Conditional detr v2:Efficient detection transformer with box queries](https://arxiv.org/abs/2207.08914)  | [Code](https://github.com/Atten4Vis/ConditionalDETR) |
-| 2022 | AAAI  |     Anchor DETR     | [Anchor detr: Query design for transformer-based detector](https://arxiv.org/abs/2109.07107)              | [Code](https://github.com/megvii-model/AnchorDETR)   |
-| 2022 | ICLR  |      DAB-DETR       | [DAB-DETR: Dynamic Anchor Boxes are Better Queries for DETR](https://arxiv.org/abs/2201.12329)            | [Code](https://github.com/SlongLiu/DAB-DETR)         |
-| 2021 | arxiv |   Efficient DETR    | [Efficient detr: improving end-to-end object  etector with dense prior](https://arxiv.org/abs/2104.01318) | N/A                                                  |
+| Year | Venue |       Acronym       | Paper Title                                                                                                | Code/Project                                         |
+|:----:|:-----:|:-------------------:|------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| 2021 | ICCV  |  Conditional-DETR   | [Conditional DETR for Fast Training Convergence](https://arxiv.org/abs/2108.06152)                         | [Code](https://github.com/Atten4Vis/ConditionalDETR) |
+| 2022 | arxiv | Conditional-DETR-v2 | [Conditional detr v2:Efficient detection transformer with box queries](https://arxiv.org/abs/2207.08914)   | [Code](https://github.com/Atten4Vis/ConditionalDETR) |
+| 2022 | AAAI  |     Anchor DETR     | [Anchor detr: Query design for transformer-based detector](https://arxiv.org/abs/2109.07107)               | [Code](https://github.com/megvii-model/AnchorDETR)   |
+| 2022 | ICLR  |      DAB-DETR       | [DAB-DETR: Dynamic Anchor Boxes are Better Queries for DETR](https://arxiv.org/abs/2201.12329)             | [Code](https://github.com/SlongLiu/DAB-DETR)         |
+| 2021 | arxiv |   Efficient DETR    | [Efficient detr: improving end-to-end object  detector with dense prior](https://arxiv.org/abs/2104.01318) | N/A                                                  |
 
 #### Adding Extra Supervision into Query
 
@@ -235,14 +236,17 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 
 #### Query as Linking Multi-Tasks
 
-| Year | Venue |       Acronym       | Paper Title                                                                                                                                | Code/Project                                           |
-|:----:|:-----:|:-------------------:|--------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| 2022 | ECCV  | Panoptic-PartFormer | [Panoptic-PartFormer: Learning a Unified Model for Panoptic Part Segmentation](https://arxiv.org/abs/2204.04655)                           | [Code](https://github.com/lxtGH/Panoptic-PartFormer)   |
-| 2022 | ECCV  |  PolyphonicFormer   | [PolyphonicFormer: Unified Query Learning for Depth-aware Video Panoptic Segmentation](https://arxiv.org/abs/2112.02582)                   | [Code](https://github.com/HarborYuan/PolyphonicFormer) |
-| 2022 | CVPR  |    PanopticDepth    | [Panopticdepth: A unified framework for depth-aware panoptic segmentation](https://arxiv.org/abs/2206.00468)                               | [Code](https://github.com/NaiyuGao/PanopticDepth)      |
+| Year | Venue |       Acronym       | Paper Title                                                                                                                            | Code/Project                                           |
+|:----:|:-----:|:-------------------:|----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| 2022 | ECCV  | Panoptic-PartFormer | [Panoptic-PartFormer: Learning a Unified Model for Panoptic Part Segmentation](https://arxiv.org/abs/2204.04655)                       | [Code](https://github.com/lxtGH/Panoptic-PartFormer)   |
+| 2022 | ECCV  |  PolyphonicFormer   | [PolyphonicFormer: Unified Query Learning for Depth-aware Video Panoptic Segmentation](https://arxiv.org/abs/2112.02582)               | [Code](https://github.com/HarborYuan/PolyphonicFormer) |
+| 2022 | CVPR  |    PanopticDepth    | [Panopticdepth: A unified framework for depth-aware panoptic segmentation](https://arxiv.org/abs/2206.00468)                           | [Code](https://github.com/NaiyuGao/PanopticDepth)      |
 | 2022 | ECCV  |    Fashionformer    | [Fashionformer: A simple, effective and unified baseline for human fashion segmentation and recognition](https://arxiv.org/abs/2204.04654) | [Code](https://github.com/xushilin1/FashionFormer)     |
-| 2022 | ECCV  |        InvPT        | [InvPT: Inverted Pyramid Multi-task Transformer for Dense Scene Understanding](https://arxiv.org/abs/2203.07997)                           | [Code](https://github.com/prismformore/InvPT)          |
-| 2023 | CVPR  |        UNINEXT        | [Universal Instance Perception as Object Discovery and Retrieval](https://arxiv.org/abs/2303.06674)                           | [Code](https://github.com/MasterBin-IIAU/UNINEXT)          |
+| 2022 | ECCV  |        InvPT        | [InvPT: Inverted Pyramid Multi-task Transformer for Dense Scene Understanding](https://arxiv.org/abs/2203.07997)                       | [Code](https://github.com/prismformore/InvPT)          |
+| 2023 | CVPR  |       UNINEXT       | [Universal Instance Perception as Object Discovery and Retrieval](https://arxiv.org/abs/2303.06674)                       | [Code](https://github.com/MasterBin-IIAU/UNINEXT)          |
+| 2024 | CVPR  |        GLEE         | [GLEE: General Object Foundation Model for Images and Videos at Scale](https://arxiv.org/abs/2312.09158)                          | [Code](https://glee-vision.github.io/)          |
+| 2024 | CVPR  |        UniVS        | [UniVS: Unified and Universal Video Segmentation with Prompts as Queries](https://arxiv.org/abs/2402.18115)                        | [Code](https://github.com/MinghanLi/UniVS)          |
+| 2024 | CVPR  |       OMG-Seg       | [OMG-Seg: Is One Model Good Enough For All Segmentation?](https://arxiv.org/abs/2401.10229)                        | [Code](https://github.com/lxtGH/OMG-Seg)          |
 
 ### Conditional Query Generation
 
