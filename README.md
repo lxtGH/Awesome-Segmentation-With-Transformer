@@ -7,7 +7,7 @@
   <p align="center">
     arXiv, 2023
     <br />
-    <a href="https://lxtgh.github.io/"><strong>Xiangtai Li</strong></a>
+    <a href="https://lxtgh.github.io/"><strong>Xiangtai Li (Project Lead)</strong></a>
     ·
     <a href="https://henghuiding.github.io/"><strong>Henghui Ding</strong></a>
     ·
@@ -44,9 +44,9 @@ We will add the missing papers to this repo ASAP.
 
 
 ### 🔥News
-[-] Add several CVPR-24 works on this directions. 2024-03
-[-] The third version is on arxiv. [survey](https://arxiv.org/abs/2304.09854) More benchmark and methods are included!!. 2023-12
-[-] The second draft is on arxiv. 2023-06
+[-] Add several CVPR-24 works on this directions. 2024-03. You are welcome to add your CVPR works in our repos!
+[-] The third version is on arxiv. [survey](https://arxiv.org/abs/2304.09854) More benchmark and methods are included!!. 2023-12.
+[-] The second draft is on arxiv. 2023-06.
 
 
 ### 🔥Highlight!!
@@ -76,8 +76,6 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
     - [Optimizing Object Query](#Optimizing-Object-Query)
     - [Using Query For Association](#Using-Query-For-Association)
     - [Conditional Query Generation](#Conditional-Query-Generation)
-
-[//]: # (  )
 
 - [Related Domains and Beyond](#Related-Domains-and-Beyond)
     - [Point Cloud Segmentation](#Point-Cloud-Segmentation)
@@ -400,10 +398,7 @@ If you find our survey and repository useful for your research project, please c
 ```
 ## Contact
 ```
-xiangtai94@gmail.com
-```
-```
-xiangtai.li@ntu.edu.sg 
+xiangtai94@gmail.com (main)
 ```
 ```
 lxtpku@pku.edu.cn
