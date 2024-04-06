@@ -44,8 +44,11 @@ We will add the missing papers to this repo ASAP.
 
 
 ### 🔥News
+
 [-] Add several CVPR-24 works on this directions. 2024-03. You are welcome to add your CVPR works in our repos!
+
 [-] The third version is on arxiv. [survey](https://arxiv.org/abs/2304.09854) More benchmark and methods are included!!. 2023-12.
+
 [-] The second draft is on arxiv. 2023-06.
 
 
@@ -250,15 +253,16 @@ In this survey, we present the first detailed survey on Transformer-Based Segmen
 
 #### Conditional Query Fusion on Language Features
 
-| Year | Venue |   Acronym   | Paper Title                                                                                                               | Code/Project                                                       |
-|:----:|:-----:|:-----------:|---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| 2021 | ICCV  |     VLT     | [Vision-Language Transformer and Query Generation for Referring Segmentation](https://arxiv.org/abs/2108.05565)           | [Code](https://github.com/henghuiding/Vision-Language-Transformer) |
-| 2022 | CVPR  |    LAVT     | [Lavt: Language-aware vision transformer for referring image segmentation](https://arxiv.org/abs/2112.02244)              | [Code](https://github.com/yz93/LAVT-RIS)                           |
-| 2022 | CVPR  |    Restr    | [Restr:Convolution-free referring image segmentation using transformers](https://arxiv.org/abs/2203.16768)                | N/A                                                                |
-| 2022 | CVPR  |    Cris     | [Cris: Clip-driven referring image segmentation](https://arxiv.org/abs/2111.15174)                                        | [Code](https://github.com/DerrickWang005/CRIS.pytorch)             |
-| 2022 | CVPR  |    MTTR     | [End-to-End Referring Video Object Segmentation with Multimodal Transformers](https://arxiv.org/abs/2111.14821)           | [Code](https://github.com/mttr2021/MTTR)                           |
-| 2022 | CVPR  |    LBDT     | [Language-Bridged Spatial-Temporal Interaction for Referring Video Object Segmentation](https://arxiv.org/abs/2206.03789) | [Code](https://github.com/dzh19990407/LBDT)                        |
-| 2022 | CVPR  | ReferFormer | [Language as queries for referring video object segmentation](https://arxiv.org/abs/2201.00487)                           | [Code](https://github.com/wjn922/ReferFormer)                      |
+| Year | Venue |    Acronym     | Paper Title                                                                                                              | Code/Project                                                       |
+|:----:|:-----:|:--------------:|--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| 2021 | ICCV  |      VLT       | [Vision-Language Transformer and Query Generation for Referring Segmentation](https://arxiv.org/abs/2108.05565)          | [Code](https://github.com/henghuiding/Vision-Language-Transformer) |
+| 2022 | CVPR  |      LAVT      | [Lavt: Language-aware vision transformer for referring image segmentation](https://arxiv.org/abs/2112.02244)             | [Code](https://github.com/yz93/LAVT-RIS)                           |
+| 2022 | CVPR  |     Restr      | [Restr:Convolution-free referring image segmentation using transformers](https://arxiv.org/abs/2203.16768)               | N/A                                                                |
+| 2022 | CVPR  |      Cris      | [Cris: Clip-driven referring image segmentation](https://arxiv.org/abs/2111.15174)                                       | [Code](https://github.com/DerrickWang005/CRIS.pytorch)             |
+| 2022 | CVPR  |      MTTR      | [End-to-End Referring Video Object Segmentation with Multimodal Transformers](https://arxiv.org/abs/2111.14821)          | [Code](https://github.com/mttr2021/MTTR)                           |
+| 2022 | CVPR  |      LBDT      | [Language-Bridged Spatial-Temporal Interaction for Referring Video Object Segmentation](https://arxiv.org/abs/2206.03789) | [Code](https://github.com/dzh19990407/LBDT)                        |
+| 2022 | CVPR  |  ReferFormer   | [Language as queries for referring video object segmentation](https://arxiv.org/abs/2201.00487)                          | [Code](https://github.com/wjn922/ReferFormer)                      |
+| 2024 | CVPR  | MaskGrounding  | [Mask Grounding for Referring Image Segmentation](https://arxiv.org/abs/2312.12198)                           | [Code](https://yxchng.github.io/projects/mask-grounding/)                      |
 
 #### Conditional Query Fusion on Cross Image Features
 
