@@ -5,7 +5,7 @@
 <p align="center">
   <h1 align="center">Transformer-Based Visual Segmentation: A Survey</h1>
   <p align="center">
-    arXiv, 2023
+    T-PAMI, 2024
     <br />
     <a href="https://lxtgh.github.io/"><strong>Xiangtai Li (Project Lead)</strong></a>
     ·
@@ -44,6 +44,8 @@ We will add the missing papers to this repo ASAP.
 
 
 ### 🔥News
+
+[-] Accepted by T-PAMI-2024.
 
 [-] Add several CVPR-24 works on this directions. 2024-03. You are welcome to add your CVPR works in our repos!
 
