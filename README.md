@@ -398,8 +398,8 @@ If you find our survey and repository useful for your research project, please c
 @article{li2023transformer,
     author={Li, Xiangtai and Ding, Henghui and Zhang, Wenwei and Yuan, Haobo and Cheng, Guangliang and Jiangmiao, Pang and Chen, Kai and Liu, Ziwei and Loy, Chen Change},
     title={Transformer-Based Visual Segmentation: A Survey},
-    journal={arXiv pre-print},
-    year={2023}
+    journal={T-PAMI},
+    year={2024}
   }
 ```
 ## Contact
