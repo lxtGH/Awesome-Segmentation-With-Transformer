@@ -11,9 +11,9 @@
     ·
     <a href="https://henghuiding.github.io/"><strong>Henghui Ding</strong></a>
     ·
-    <a href="http://zhangwenwei.cn/"><strong>Wenwei Zhang</strong></a>
-    ·
     <a href="https://yuanhaobo.me/"><strong>Haobo Yuan</strong></a>
+    ·
+    <a href="http://zhangwenwei.cn/"><strong>Wenwei Zhang</strong></a>
     ·
     <a href="https://sites.google.com/view/guangliangcheng"><strong>Guangliang Cheng</strong></a>
     <br />
@@ -32,6 +32,9 @@
     </a>
     <a href='https://www.mmlab-ntu.com/project/seg_survey/index.html' style='padding-left: 0.5rem;'>
       <img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='S-Lab Project Page'>
+    </a>
+    <a href='https://ieeexplore.ieee.org/abstract/document/10613466'>
+      <img src='https://img.shields.io/badge/TPAMI-PDF-blue?style=flat&logo=IEEE&logoColor=green' alt='TPAMI PDF'>
     </a>
   </p>
 <br />
